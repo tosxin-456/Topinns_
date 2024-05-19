@@ -1,5 +1,5 @@
 import React from 'react'
-import { IoCloseSharp } from "react-icons/io5";
+import { IoCloseSharp, IoSunny, IoMoon } from "react-icons/io5";
 import { Box,
      HStack,
      Text,
@@ -10,6 +10,7 @@ import { Box,
      TabPanel, 
      Button,
      useColorMode,
+     Image
  } from '@chakra-ui/react';
 
 
@@ -66,13 +67,13 @@ function Navbar() {
      
      >blog</Text>
         <Box p={4}>
-      <Button onClick={toggleColorMode} mb={4}>
+      {/* <Button onClick={toggleColorMode} mb={4}>
         Toggle {colorMode === 'light' ? 'Dark' : 'Light'} Mode
-      </Button>
-      <Tabs variant="soft-rounded" colorScheme="teal">
+      </Button> */}
+      <Tabs variant="soft-rounded" colorScheme="red">
         <TabList>
-          <Tab>Light</Tab>
-          <Tab>Dark</Tab>
+          <Tab><IoSunny/></Tab>
+          <Tab><IoMoon/></Tab>
         </TabList>
       </Tabs>
     </Box>
