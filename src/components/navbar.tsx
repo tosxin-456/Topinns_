@@ -10,9 +10,10 @@ import { Box,
      TabPanel, 
      Button,
      useColorMode,
-     Image
+     Image,
+     IconButton
  } from '@chakra-ui/react';
-
+ import { SunIcon, MoonIcon } from '@chakra-ui/icons';
 
 
 
@@ -25,18 +26,24 @@ function Navbar() {
   <Box
 //   background={'red'}
   display={'flex'}
-  justifyContent={'space-evenly'}
+  justifyContent={'space-between'}
   width={'100%'}
   position={'fixed'}
   fontSize={'21px'}
   >
   <Box 
+  width={'30%'}
+  textAlign={'center'}
   >
     Logo
   </Box>
    <HStack
     // _hover={{ textDecoration: "underline" , cursor:'pointer'}}
    justifyContent={'space-between'}
+   width={'70%'}
+   background={'red'}
+   marginRight={'0px'}
+   padding={'5px'}
    >
      <Text
     _hover={{ textDecoration: "underline" , cursor:'pointer'}}
@@ -67,15 +74,41 @@ function Navbar() {
      
      >blog</Text>
         <Box p={4}>
-      {/* <Button onClick={toggleColorMode} mb={4}>
-        Toggle {colorMode === 'light' ? 'Dark' : 'Light'} Mode
-      </Button> */}
-      <Tabs variant="soft-rounded" colorScheme="red">
+      <Button 
+      onClick={toggleColorMode}
+    //    mb={4}
+       backgroundColor={'#C7D0FF'}
+       width={'100px'}
+       height={'30px'}
+       fontSize={'13px'}
+       textAlign={'start'}
+       borderRadius={'5px'}
+       justifyContent={'start'}
+       >
+      <Text
+      textAlign={'center'}
+    //   backgroundColor={'linear-gradient(134deg, #6A98F0 0%, #4961DC 99%)'}
+      backgroundColor={'blue'}
+      color={'white'}
+      width={'50%'}
+      marginLeft={'3px'}
+      borderRadius={'5px'}
+      bg="linear-gradient(134deg, #6A98F0 0%, #4961DC 99%)"
+      p={'2px'}
+      >
+        Light
+      </Text>
+      </Button>
+      {/* <Tabs variant="soft-rounded" colorScheme="red">
         <TabList>
-          <Tab><IoSunny/></Tab>
-          <Tab><IoMoon/></Tab>
+        <IconButton
+        aria-label="Toggle theme"
+        icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+        onClick={toggleColorMode}
+        mb={4}
+      />
         </TabList>
-      </Tabs>
+      </Tabs> */}
     </Box>
 
    </HStack>
