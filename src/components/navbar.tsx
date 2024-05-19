@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { IoCloseSharp, IoSunny, IoMoon } from "react-icons/io5";
+import { IoMdHome } from "react-icons/io";
+import { FaPerson } from "react-icons/fa6";
 import { Box,
      HStack,
      Text,
