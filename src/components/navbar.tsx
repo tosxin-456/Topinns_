@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { IoCloseSharp, IoSunny, IoMoon } from "react-icons/io5";
 import { Box,
      HStack,
@@ -20,95 +20,116 @@ import { Box,
 
 
 function Navbar() {
-    const { colorMode, toggleColorMode } = useColorMode();
+    const [isLightMode, setIsLightMode] = useState(true);
 
+    const toggleColorMode = () => {
+      setIsLightMode(prevMode => !prevMode);
+    };
   return (
   <Box
 //   background={'red'}
+fontFamily="'Clash Display', sans-serif"
   display={'flex'}
   justifyContent={'space-between'}
   width={'100%'}
   position={'fixed'}
-  fontSize={'21px'}
+  fontSize={'19px'}
   >
   <Box 
   width={'30%'}
   textAlign={'center'}
+  margin={'auto'}
+  boxShadow={'2px'}
+  color={'#6A98F0'}
   >
-    Logo
+    Topinns
   </Box>
    <HStack
     // _hover={{ textDecoration: "underline" , cursor:'pointer'}}
    justifyContent={'space-between'}
    width={'70%'}
-   background={'red'}
    marginRight={'0px'}
    padding={'5px'}
+   fontFamily={'Clash-Display-light'}
+
    >
      <Text
-    _hover={{ textDecoration: "underline" , cursor:'pointer'}}
+    fontFamily="'Clash Display', sans-serif"
+    _hover={{ textDecoration: "underline" , cursor:'pointer', color:'#6A98F0'}}
      
      >
        home
      </Text>
      <Text
-    _hover={{ textDecoration: "underline" , cursor:'pointer'}}
+    fontFamily="'Clash Display', sans-serif"
+    _hover={{ textDecoration: "underline" , cursor:'pointer', color:'#6A98F0'}}
      
      >
         about me
      </Text>
      <Text
-    _hover={{ textDecoration: "underline" , cursor:'pointer'}}
+    fontFamily="'Clash Display', sans-serif"
+    _hover={{ textDecoration: "underline" , cursor:'pointer', color:'#6A98F0'}}
      
      >projects</Text>
      <Text
-    _hover={{ textDecoration: "underline" , cursor:'pointer'}}
+    fontFamily="'Clash Display', sans-serif"
+    _hover={{ textDecoration: "underline" , cursor:'pointer', color:'#6A98F0'}}
      
      >games</Text>
      <Text
-    _hover={{ textDecoration: "underline" , cursor:'pointer'}}
+    fontFamily="'Clash Display', sans-serif"
+    _hover={{ textDecoration: "underline" , cursor:'pointer', color:'#6A98F0'}}
      
      >contact</Text>
      <Text
-    _hover={{ textDecoration: "underline" , cursor:'pointer'}}
+    fontFamily="'Clash Display', sans-serif"
+    _hover={{ textDecoration: "underline" , cursor:'pointer', color:'#6A98F0'}}
      
      >blog</Text>
         <Box p={4}>
-      <Button 
+        <Button
       onClick={toggleColorMode}
-    //    mb={4}
-       backgroundColor={'#C7D0FF'}
-       width={'100px'}
-       height={'30px'}
-       fontSize={'13px'}
-       textAlign={'start'}
-       borderRadius={'5px'}
-       justifyContent={'start'}
-       >
-      <Text
-      textAlign={'center'}
-    //   backgroundColor={'linear-gradient(134deg, #6A98F0 0%, #4961DC 99%)'}
-      backgroundColor={'blue'}
-      color={'white'}
-      width={'50%'}
-      marginLeft={'3px'}
+      backgroundColor={'#C7D0FF'}
+      width={'100px'}
+      height={'30px'}
+      fontSize={'11px'}
+      textAlign={'start'}
       borderRadius={'5px'}
-      bg="linear-gradient(134deg, #6A98F0 0%, #4961DC 99%)"
-      p={'2px'}
-      >
-        Light
-      </Text>
-      </Button>
-      {/* <Tabs variant="soft-rounded" colorScheme="red">
-        <TabList>
-        <IconButton
-        aria-label="Toggle theme"
-        icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-        onClick={toggleColorMode}
-        mb={4}
-      />
-        </TabList>
-      </Tabs> */}
+      justifyContent={'start'}
+      marginRight={'15px'}
+    >
+      {isLightMode ? (
+        <Text
+          textAlign={'center'}
+          backgroundColor={'blue'}
+          color={'white'}
+          width={'40%'}
+          marginLeft={'3px'}
+          borderRadius={'5px'}
+          bg="linear-gradient(134deg, #6A98F0 0%, #4961DC 99%)"
+          p={'2px'}
+          fontFamily="'Clash Display', sans-serif"
+        >
+          Light
+        </Text>
+      ) : (
+        <Text
+          textAlign={'center'}
+          backgroundColor={'blue'}
+          color={'white'}
+          width={'40%'}
+          marginRight={'5px'}
+          marginLeft={'auto'}
+          borderRadius={'5px'}
+          bg="linear-gradient(134deg, #6A98F0 0%, #4961DC 99%)"
+          p={'2px'}
+          fontFamily="'Clash Display', sans-serif"
+        >
+          Dark
+        </Text>
+      )}
+    </Button>
     </Box>
 
    </HStack>
