@@ -44,6 +44,7 @@ fontFamily="'Clash Display', sans-serif"
   justifyContent={'space-between'}
   width={'100%'}
   position={'fixed'}
+  top={0}
   fontSize={'19px'}
   className={`${isLightMode ?'bg-white shadow-md' :'bg-[#141613]'}`}
   padding={'5px'}
