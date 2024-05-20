@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { IoCloseSharp, IoSunny, IoMoon } from "react-icons/io5";
 import { IoMdHome } from "react-icons/io";
 import { FaPerson } from "react-icons/fa6";
@@ -17,16 +17,25 @@ import { Box,
  } from '@chakra-ui/react';
  import { SunIcon, MoonIcon } from '@chakra-ui/icons';
 
+ 
+ 
+ function Navbar() {
+     const [isLightMode, setIsLightMode] = useState(true);
+     
+     useEffect(() => {
+        if (isLightMode) {
+          document.body.style.backgroundColor = 'white';
+          document.body.style.color = 'black';
+        } else {
+          document.body.style.backgroundColor = 'black';
+          document.body.style.color = 'white';
+        }
+      }, [isLightMode]);
+    
+      const toggleColorMode = () => {
+        setIsLightMode(prevMode => !prevMode);
+      };
 
-
-
-
-function Navbar() {
-    const [isLightMode, setIsLightMode] = useState(true);
-
-    const toggleColorMode = () => {
-      setIsLightMode(prevMode => !prevMode);
-    };
   return (
   <Box
 //   background={'red'}
