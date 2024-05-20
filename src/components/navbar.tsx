@@ -27,7 +27,7 @@ import { Box,
           document.body.style.backgroundColor = 'white';
           document.body.style.color = 'black';
         } else {
-          document.body.style.backgroundColor = 'black';
+          document.body.style.backgroundColor = '#0B0E13';
           document.body.style.color = 'white';
         }
       }, [isLightMode]);
@@ -45,6 +45,10 @@ fontFamily="'Clash Display', sans-serif"
   width={'100%'}
   position={'fixed'}
   fontSize={'19px'}
+  className={`${isLightMode ?'bg-white':'bg-[#141613]'}`}
+  padding={'5px'}
+  
+
   >
   <Box 
   width={'30%'}
@@ -52,6 +56,7 @@ fontFamily="'Clash Display', sans-serif"
   margin={'auto'}
   boxShadow={'2px'}
   color={'#6A98F0'}
+
   >
     Topinns
   </Box>
@@ -101,7 +106,7 @@ fontFamily="'Clash Display', sans-serif"
         <Box p={4}>
         <Button
       onClick={toggleColorMode}
-      backgroundColor={'#C7D0FF'}
+      backgroundColor={`${isLightMode ?'#C7D0FF' :'#303030'}`}
       width={'100px'}
       height={'30px'}
       fontSize={'11px'}
@@ -122,7 +127,7 @@ fontFamily="'Clash Display', sans-serif"
           p={'2px'}
           fontFamily="'Clash Display', sans-serif"
         >
-          Light
+          Dark
         </Text>
       ) : (
         <Text
@@ -137,7 +142,7 @@ fontFamily="'Clash Display', sans-serif"
           p={'2px'}
           fontFamily="'Clash Display', sans-serif"
         >
-          Dark
+          Light
         </Text>
       )}
     </Button>
