@@ -45,7 +45,7 @@ fontFamily="'Clash Display', sans-serif"
   width={'100%'}
   position={'fixed'}
   fontSize={'19px'}
-  className={`${isLightMode ?'bg-white':'bg-[#141613]'}`}
+  className={`${isLightMode ?'bg-white shadow-md' :'bg-[#141613]'}`}
   padding={'5px'}
   
 
