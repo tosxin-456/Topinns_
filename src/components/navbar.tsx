@@ -5,37 +5,19 @@ import { FaPerson } from "react-icons/fa6";
 import { Box,
      HStack,
      Text,
-     Tabs, 
-     TabList,
-     TabPanels,
-     Tab,
-     TabPanel, 
      Button,
-     useColorMode,
-     Image,
-     IconButton
+
  } from '@chakra-ui/react';
  import { SunIcon, MoonIcon } from '@chakra-ui/icons';
-
+ 
+ interface FooterProps {
+  isLightMode: boolean; 
+  toggleColorMode: () => void;
+}
  
  
- function Navbar() {
-     const [isLightMode, setIsLightMode] = useState(true);
-     
-     useEffect(() => {
-        if (isLightMode) {
-          document.body.style.backgroundColor = 'white';
-          document.body.style.color = 'black';
-        } else {
-          document.body.style.backgroundColor = '#0B0E13';
-          document.body.style.color = 'white';
-        }
-      }, [isLightMode]);
-    
-      const toggleColorMode = () => {
-        setIsLightMode(prevMode => !prevMode);
-      };
-
+ function Navbar({ isLightMode, toggleColorMode }: FooterProps) {
+   
   return (
   <Box
 //   background={'red'}
@@ -45,8 +27,9 @@ fontFamily="'Clash Display', sans-serif"
   width={'100%'}
   position={'fixed'}
   top={0}
+  mb={'200px'}
   fontSize={'19px'}
-  className={`${isLightMode ?'bg-white shadow-md' :'bg-[#141613]'}`}
+  className={`${isLightMode ?'bg-white color-black shadow-md ' :'bg-[#141613]  '}`}
   padding={'5px'}
   
 
