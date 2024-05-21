@@ -10,7 +10,10 @@ function Topskills() {
       <Text
       className='text-3xl'
       >My Top Skills</Text>
-      <Text>
+      <Text 
+      textAlign={'center'}
+      padding={'7px'}
+      >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam ratione officia eius exercitationem molestiae. Similique ipsa fugit nisi ipsam enim, iste ea neque laboriosam! Qui pariatur aut laboriosam, odio dolores iste a harum maxime architecto ut voluptatem suscipit excepturi tempore quod accusamus odit soluta vitae! Temporibus obcaecati hic ab.
       </Text>
     </VStack>
