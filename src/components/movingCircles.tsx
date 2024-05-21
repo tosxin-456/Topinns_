@@ -10,7 +10,7 @@ const MovingCircles: React.FC<MovingCirclesProps> = ({ color }) => {
   const [circles, setCircles] = useState<Array<{ id: number; top: number; left: number; delay: number }>>([]);
 
   useEffect(() => {
-    const numCircles = 15;
+    const numCircles = 5;
     const newCircles = Array.from({ length: numCircles }).map((_, index) => ({
       id: index,
       top: Math.random() * 100,
