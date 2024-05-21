@@ -1,6 +1,7 @@
-import  { useEffect, useRef } from 'react';
+import  { useEffect, useRef, } from 'react';
 import { Box, Text } from '@chakra-ui/react';
 import Typed from 'typed.js';
+// import { NavLink } from 'react-router-dom';
 
 interface FooterProps {
   isLightMode: boolean;
@@ -35,11 +36,100 @@ function Highlight({ isLightMode }: FooterProps) {
           <br>
           }
           <br>
-          <b>love();</b>`
+          <b>love();</b>`,
+          `HTML:
+           <br>
+          <h1 class="quote">"The beauty of life is in its moments."</h1>
+          CSS:
+          <br>
+          .quote {
+            <br>
+            position: relative;
+            <br>
+          }
+          <br>
+          .quote::before {
+            <br>
+            content: "truthfully";
+            <br>
+            position: absolute;
+            <br>
+            top: 0;
+            <br>
+            left: 0;
+            <br>
+            width: 0;
+            <br>
+            height: 100%;
+            <br>
+            background: linear-gradient(to right, #ff9999, #66cc00);
+            <br>
+            animation: animate 5s linear infinite;
+            <br>
+          }
+          <br>          
+          @keyframes animate {
+            <br>
+            0% {
+              <br> 
+              width: 0;
+              <br>
+            }
+            <br>
+            100% {
+              <br>
+              width: 100%;
+              <br>
+            }  }`,
+            `interface Life {
+              <br>
+              owner: string;
+              <br>
+            }
+            <br>
+            let myLife: Life = { owner: 'Self' };
+            <br>
+            function giveLifeToJesus.life(owner: string) {
+              <br>
+              myLife.owner = 'Jesus';
+              <br>
+            }
+            <br>
+            giveLifeToJesus(myLife);
+            <br>
+            console.log(myLife); // Output: { owner: 'Jesus' }`,
+            `import numpy as np
+            <br>
+            from sklearn.feature_extraction.text import TfidfVectorizer
+            <br>
+            from sklearn.metrics.pairwise import cosine_similarity
+            <br>
+            you = "you"
+            <br>
+            love = "love"
+            <br>
+            i = "I"
+            <br>
+            sentences = [f"{i} {love} {you}"]
+            <br>
+            vectorizer = TfidfVectorizer()
+            <br>
+            vectors = vectorizer.fit_transform(sentences)
+            <br>
+            similarity = cosine_similarity(vectors)
+            <br>
+            print(f"The similarity between '{i}' loving '{you}' is {similarity[0][0]}")
+            <br>
+            # Translate "I love you" to Klingon
+            <br>
+            klingon_translation = "qamuSHa'"
+            <br>
+            print(klingon_translation + "mal'a" )
+            `
         ],
         typeSpeed: 35,
-        backSpeed: 500,
-        backDelay: 30,
+        backSpeed: 35,
+        backDelay: 300,
         loop: true,
       });
 

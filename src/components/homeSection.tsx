@@ -5,6 +5,7 @@ import cv from '../assets/EKUNDAYO SHALLOM OSEJILO - CV.pdf'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
+// import { NavLink } from 'react-router-dom';
 
 
 
@@ -59,10 +60,18 @@ function HomeSection({isLightMode}:FooterProps) {
 
      </Box>
      <Flex className='mt-[5px]'>
+      <a href='https://github.com/tosxin-456'>
      <FaGithub className="  w-[50px] h-[30px] mt-[10px] transition duration-300 ease-in-out transform hover:scale-110" />
+      </a>
+      <a href='https://www.linkedin.com/in/shallom-ekundayo-42bb35241/'>
       <FaLinkedin className=" w-[50px] h-[30px] mt-[10px] transition duration-300 ease-in-out transform hover:scale-110" />
+      </a>
+      <a href='https://twitter.com/shallomekundayo'>
       <FaXTwitter className=" w-[50px] h-[30px] mt-[10px] transition duration-300 ease-in-out transform hover:scale-110" />
+      </a>
+      <a href='mailto:tosinekshally@gmail.com'>
       <MdOutlineEmail className="  w-[50px] h-[30px] mt-[10px] transition duration-300 ease-in-out transform hover:scale-110" />
+      </a>
 
      </Flex>
         </Box>
