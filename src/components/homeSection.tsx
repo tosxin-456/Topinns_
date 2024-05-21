@@ -1,5 +1,5 @@
-import React from 'react';
-import {HStack, Text, VStack, Box, Image, Flex, Icon} from '@chakra-ui/react';
+// import React from 'react';
+import { Text, VStack, Box, Image, Flex, } from '@chakra-ui/react';
 import line from '../assets/Line.svg';
 import cv from '../assets/EKUNDAYO SHALLOM OSEJILO - CV.pdf'
 import { FaGithub, FaLinkedin } from "react-icons/fa";

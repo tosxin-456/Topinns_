@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
 import {
-    Box,
+    // Box,
     Text, 
-    Image,
+    // Image,
     HStack
 
 } from '@chakra-ui/react';
-import logo from '../assets/Topinns.png'
+// import logo from '../assets/Topinns.png'
 
 interface FooterProps {
     isLightMode: boolean; // Example type definition

@@ -1,5 +1,5 @@
-import { Box, Flex } from '@chakra-ui/react';
-import React from 'react';
+import { Box} from '@chakra-ui/react';
+// import React from 'react';
 import Highlight from '../../components/highlight';
 import HomeSection from '../../components/homeSection';
 import Topskills from '../../components/topskills';

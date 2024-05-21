@@ -1,5 +1,5 @@
-import React from 'react'
-import {HStack, Text, VStack, Box, Image, Flex, Icon} from '@chakra-ui/react';
+// import React from 'react'
+import { Text, VStack,} from '@chakra-ui/react';
 
 
 function Topskills() {
