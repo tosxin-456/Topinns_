@@ -5,6 +5,8 @@ import HomeSection from '../../components/homeSection';
 // import Topskills from '../../components/topskills';
 import ReadmeStats from '../../components/reameStats';
 
+
+
 interface HomeProps {
   isLightMode: boolean; // Assuming this prop is passed to Home component
 }
@@ -17,6 +19,7 @@ function Home({ isLightMode }: HomeProps) {
         <Highlight isLightMode={isLightMode} /> {/* Pass isLightMode prop to Highlight */}
       </Box>
         <ReadmeStats/>
+        {/* <MovingCircles/> */}
     </Box>
   );
 }

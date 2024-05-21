@@ -1,5 +1,7 @@
+// src/components/ReadmeStats.tsx
 import { Text, VStack, Button } from '@chakra-ui/react';
 import { useState } from 'react';
+import MovingCircles from './movingCircles';
 
 interface FooterProps {
   event: {
@@ -40,10 +42,9 @@ function ReadmeStats() {
       marginTop={'30px'}
       p={5}
     >
+      <MovingCircles color={color} />
       {/* Basic color picker */}
-      <Text
-      className='text-3xl'
-      >Development Dashboard</Text>
+      <Text className='text-3xl'>Development Dashboard</Text>
       <input
         type="color"
         value={color}
