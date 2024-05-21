@@ -1,4 +1,4 @@
-import { Text, VStack, Button, useColorMode } from '@chakra-ui/react';
+import { Text, VStack, Button } from '@chakra-ui/react';
 import { useState } from 'react';
 
 interface FooterProps {
@@ -11,7 +11,7 @@ interface FooterProps {
 
 function ReadmeStats() {
   const [color, setColor] = useState('#00fe99');
-  const { colorMode, toggleColorMode } = useColorMode();
+//   const { colorMode, toggleColorMode } = useColorMode();
 
   const handleColorChange = (event: FooterProps['event']) => {
     setColor(event.target.value); // Assuming event.target.value is a string representing color
@@ -52,7 +52,7 @@ function ReadmeStats() {
         className='outline-none m-auto'
       />
 
-      <Button onClick={toggleColorMode} mt={3}>
+      <Button mt={3}>
         Toggle Theme
       </Button>
 
