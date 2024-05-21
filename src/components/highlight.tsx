@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import  { useEffect, useRef } from 'react';
 import { Box, Text } from '@chakra-ui/react';
 import Typed from 'typed.js';
 
