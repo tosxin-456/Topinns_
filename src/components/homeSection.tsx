@@ -26,7 +26,7 @@ function HomeSection({isLightMode}:FooterProps) {
     <VStack 
     height={'fit-content'}
     // background={'red'}
-    className='text-xl mt-[200px] w-[80%] m-auto  ' >
+    className='text-xl mt-[70px] lg:mt-[200px] w-[80%] m-auto  ' >
     <Flex>
     <Image 
     height={'230px'}
@@ -35,23 +35,23 @@ function HomeSection({isLightMode}:FooterProps) {
     ml={'10px'}
     >
      <h1
-     className='text-lg ml-[4px] '
+     className='text-md lg:text-lg ml-[4px] '
      >
         Hello, I'm
      </h1>
      <Text
-     className='text-6xl'
+     className='text-3xl lg:text-6xl'
      >
         Ekundayo Shallom
      </Text>
      <Text
-     className='text-xl ml-[4px] mb-[15px]'
+     className='text-lg lg:text-xl ml-[4px] mb-[15px]'
      >
      VERSATILE FULL-STACK WEB DEVELOPER
      </Text>
      <Box>
      <button
-  className={`${isLightMode ? 'bg-yellow-300 text-md ml-[3px] text-black p-3 rounded-lg text-md' : 'bg-yellow-300 p-3 rounded-lg text-md ml-[3px] text-black'}`}
+  className={`${isLightMode ? 'bg-yellow-300 text-sm lg:text-md ml-[3px] text-black p-3 rounded-lg lg:text-md' : 'bg-yellow-300 p-3 rounded-lg text-sm lg:text-md ml-[3px] text-black'}`}
     
       onClick={()=>handleDownload()}>
         Download CV
