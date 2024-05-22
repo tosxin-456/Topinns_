@@ -44,7 +44,7 @@ function App() {
       <div>
        <Navbar isLightMode={isLightMode} toggleColorMode={toggleColorMode}/>
        <Home isLightMode={isLightMode}/>
-       <About/>
+       <About isLightMode={isLightMode}/>
        <Footer isLightMode={isLightMode}/>
       </div>
     </>
