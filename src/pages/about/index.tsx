@@ -12,8 +12,7 @@ function About({isLightMode}:FooterProps) {
  
 
   return (
-    <Box fontFamily="'Clash Display', sans-serif">
-      
+    <Box fontFamily="'Clash Display', sans-serif" id='aboutUs'>
     <AboutHeader/>
     <Skillset isLightMode={isLightMode}/>
     </Box>

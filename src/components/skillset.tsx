@@ -80,7 +80,7 @@ function Skillset({isLightMode}:SkillsProps) {
         >
         <SiGoogletagmanager className=' mr-[5px] mt-[2px]' /> 
         <Text  className='text-[15px] text-center'>
-          Management and Development
+          Management, Development and Maintenance
         </Text>
             </Box >
         <Text fontFamily='"Poppins", "sans-serif"' className='text-[15px] text-center'>
