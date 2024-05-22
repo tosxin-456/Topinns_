@@ -1,15 +1,66 @@
-import { useState, useEffect } from 'react'
-import './App.css'
-import Footer from './components/footer'
-import Navbar from './components/navbar'
-import Home from './pages/home'
-import About from './pages/about'
+// App.tsx
+import React, { useState, useEffect, useRef } from 'react';
+import './App.css';
+import Footer from './components/footer';
+import Navbar from './components/navbar';
+import Home from './pages/home';
+import About from './pages/about';
 
-function App() {
-  const [isLightMode, setIsLightMode] = useState(() => {
+type SectionRefs = {
+  home: HTMLElement | null;
+  about: HTMLElement | null;
+  projects: HTMLElement | null;
+  games: HTMLElement | null;
+  contact: HTMLElement | null;
+  blog: HTMLElement | null;
+};
+
+const App: React.FC = () => {
+  const [isLightMode, setIsLightMode] = useState<boolean>(() => {
     const theme = localStorage.getItem('mode');
-    return theme ? theme === 'light' : true; // Default to light mode if no preference is set
+    return theme ? theme === 'light' : true;
   });
+
+  const sectionRefs = useRef<SectionRefs>({
+    home: null,
+    about: null,
+    projects: null,
+    games: null,
+    contact: null,
+    blog: null,
+  });
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            window.history.pushState(null, '', `#${entry.target.id}`);
+          }
+        });
+      },
+      {
+        threshold: 0.7,
+      }
+    );
+
+    const { home, about, projects, games, contact, blog } = sectionRefs.current;
+    const sections = [home, about, projects, games, contact, blog];
+    
+    sections.forEach(section => {
+      if (section) {
+        observer.observe(section);
+      }
+    });
+
+    return () => {
+      sections.forEach(section => {
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
+    };
+  }, []);
 
   useEffect(() => {
     if (isLightMode) {
@@ -34,21 +85,24 @@ function App() {
     }
   }, []);
 
-
   const toggleColorMode = () => {
     setIsLightMode(prevMode => !prevMode);
   };
-  
+
   return (
     <>
       <div>
-       <Navbar isLightMode={isLightMode} toggleColorMode={toggleColorMode}/>
-       <Home isLightMode={isLightMode}/>
-       <About isLightMode={isLightMode}/>
-       <Footer isLightMode={isLightMode}/>
+        <Navbar isLightMode={isLightMode} toggleColorMode={toggleColorMode} />
+        <div id="home" ref={el => sectionRefs.current.home = el}>
+          <Home isLightMode={isLightMode} />
+        </div>
+        <div id="about" ref={el => sectionRefs.current.about = el}>
+          <About isLightMode={isLightMode} />
+        </div>
+        <Footer isLightMode={isLightMode} />
       </div>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

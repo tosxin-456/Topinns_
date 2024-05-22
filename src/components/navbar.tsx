@@ -35,6 +35,7 @@ import { Box,
   }, []);
 
 
+
   return (
     <Flex>
 
@@ -77,7 +78,7 @@ import { Box,
      <Text
     fontFamily="'Clash Display', sans-serif"
     _hover={{ textDecoration: "underline" , cursor:'pointer', color:'#6A98F0'}}
-     
+    as="a" href="#home"
      >
        home
      </Text>
@@ -85,6 +86,7 @@ import { Box,
     fontFamily="'Clash Display', sans-serif"
     _hover={{ textDecoration: "underline" , cursor:'pointer', color:'#6A98F0'}}
      textAlign={'center'}
+     as="a" href="#about"
      >
         about me
      </Text>
@@ -241,7 +243,7 @@ import { Box,
     fontFamily="'Clash Display', sans-serif"
     _hover={{ textDecoration: "underline" , cursor:'pointer', color:'#6A98F0'}}
     className={`${isLightMode ?'bg-white color-black  ' :'bg-[#141613] text-white '}`}
-     
+    as="a" href="#home"
      >
        home 
        {/* <FaCheck/> */}
@@ -251,6 +253,7 @@ import { Box,
      className={`${isLightMode ?'bg-white color-black  ' :'bg-[#141613] text-white '}`}
     _hover={{ textDecoration: "underline" , cursor:'pointer', color:'#6A98F0'}}
      textAlign={'center'}
+     as="a" href="#about"
      >
         about me
      </Text>

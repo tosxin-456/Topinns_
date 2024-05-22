@@ -36,7 +36,7 @@ function Skillset({isLightMode}:SkillsProps) {
            Back-end Development Expertise
         </Text>
         </Box>    
-        <Text fontFamily='"Poppins", "sans-serif"' className='text-[15px] text-center'>
+        <Text fontFamily='"Poppins", "sans-serif"' className='text-[15px] text-start'>
         Building robust and scalable server-side logic, I create efficient APIs and seamless user experiences
         </Text>
         </Box>
@@ -61,7 +61,7 @@ function Skillset({isLightMode}:SkillsProps) {
         Front-end Development Expertise
         </Text>
             </Box>
-        <Text fontFamily='"Poppins", "sans-serif"' className='text-[15px] text-center'>
+        <Text fontFamily='"Poppins", "sans-serif"' className='text-[15px] text-end'>
         Crafting dynamic interfaces, I build fast, scalable, and accessible web applications, with React, Tailwind, etc.
         </Text>
         </Box>
