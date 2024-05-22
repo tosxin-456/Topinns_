@@ -76,7 +76,7 @@ function Skillset({isLightMode}:SkillsProps) {
         margin={'auto'}
         width={'fit-content'}
         display={'flex'}
-        height={'30px'}
+        // height={'30px'}
         >
         <SiGoogletagmanager className=' mr-[5px] mt-[5px]' /> 
         <Text  className='text-[18px] text-center'>
