@@ -31,7 +31,7 @@ function Skillset({isLightMode}:SkillsProps) {
         width={'fit-content'}
         display={'flex'}
         >
-        <Text width={'fit-content'} className='text-[18px] text-center flex'>
+        <Text width={'fit-content'} className='text-[18px] text-start flex'>
         <SiNestjs className='w-[50px] h-[30px] mr-auto' />
            Back-end Development Expertise
         </Text>
@@ -56,10 +56,10 @@ function Skillset({isLightMode}:SkillsProps) {
             display={'flex'}
             height={'fit-content'}
             >
-          <FaReact className='w-[50px] h-[30px] mr-auto' />
-        <Text  className='text-[18px] text-center'>
+        <Text  className='text-[18px] text-end'>
         Front-end Development Expertise
         </Text>
+          <FaReact className='w-[50px] h-[30px] mr-auto' />
             </Box>
         <Text fontFamily='"Poppins", "sans-serif"' className='text-[15px] text-end'>
         Crafting dynamic interfaces, I build fast, scalable, and accessible web applications, with React, Tailwind, etc.
@@ -78,8 +78,8 @@ function Skillset({isLightMode}:SkillsProps) {
         display={'flex'}
         height={'30px'}
         >
-        <SiGoogletagmanager className=' mr-[5px] mt-[2px]' /> 
-        <Text  className='text-[15px] text-center'>
+        <SiGoogletagmanager className=' mr-[5px] mt-[5px]' /> 
+        <Text  className='text-[18px] text-center'>
           Management, Development and Maintenance
         </Text>
             </Box >
