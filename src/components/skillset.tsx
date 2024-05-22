@@ -76,9 +76,9 @@ function Skillset({isLightMode}:SkillsProps) {
         margin={'auto'}
         width={'fit-content'}
         display={'flex'}
-        height={'40px'}
+        height={'30px'}
         >
-        <SiGoogletagmanager className='w-[25px] mr-[5px] mt-[2px]' /> 
+        <SiGoogletagmanager className=' mr-[5px] mt-[2px]' /> 
         <Text  className='text-[15px] text-center'>
           Management and Development
         </Text>
