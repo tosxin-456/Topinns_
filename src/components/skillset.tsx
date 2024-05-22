@@ -1,5 +1,5 @@
-import { HStack, Flex , VStack, Box, Text } from '@chakra-ui/react'
-import React from 'react'
+import { Flex , VStack, Box, Text } from '@chakra-ui/react'
+// import React from 'react'
 
 
 interface SkillsProps {
