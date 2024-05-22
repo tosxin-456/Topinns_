@@ -15,11 +15,10 @@ function Home({ isLightMode }: HomeProps) {
   return (
     <Box fontFamily="'Clash Display', sans-serif">
      <Box className='flex flex-col lg:flex-row' >
-        <HomeSection isLightMode={isLightMode} /> {/* Pass isLightMode prop to HomeSection */}
-        <Highlight isLightMode={isLightMode} /> {/* Pass isLightMode prop to Highlight */}
+        <HomeSection isLightMode={isLightMode} /> 
+        <Highlight isLightMode={isLightMode} /> 
       </Box>
         <ReadmeStats/>
-        {/* <MovingCircles/> */}
     </Box>
   );
 }

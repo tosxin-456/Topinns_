@@ -12,7 +12,8 @@ import { Box,
 
  } from '@chakra-ui/react';
  import { SunIcon, MoonIcon, CloseIcon, HamburgerIcon  } from '@chakra-ui/icons';
- 
+//  import { FaCheck } from "react-icons/fa6";
+
  interface FooterProps {
   isLightMode: boolean; 
   toggleColorMode: () => void;
@@ -242,7 +243,8 @@ import { Box,
     className={`${isLightMode ?'bg-white color-black  ' :'bg-[#141613] text-white '}`}
      
      >
-       home
+       home 
+       {/* <FaCheck/> */}
      </Text>
      <Text
     fontFamily="'Clash Display', sans-serif"
