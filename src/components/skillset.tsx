@@ -18,11 +18,12 @@ function Skillset({isLightMode}:SkillsProps) {
         <Text className='text-3xl'>My SkillSet</Text>
       <Flex>
         <Box
-        width={'47%'}
+        width={'46%'}
         marginRight={'auto'}
         marginLeft={'20px'}
+        marginTop={'25px'}
         // className='shadow-lg p-[10px] rounded-lg'
-        className={`${isLightMode ?'bg-[white] text-black shadow-lg p-[10px] rounded-lg' :'bg-[#191A26] text-white p-[15px]  rounded-lg'}`}
+        className={`${isLightMode ?'bg-[white] text-black shadow-lg p-[10px] rounded-lg' :'bg-[#191A26] text-white p-[10px] shadow-lg rounded-lg'}`}
         >
         <Box
         margin={'auto'}
@@ -39,12 +40,13 @@ function Skillset({isLightMode}:SkillsProps) {
         </Text>
         </Box>
         <Box
-        width={'47%'}
+        width={'46%'}
         marginLeft={'auto'}
         marginRight={'20px'}
         height={'150px'}
+        marginTop={'25px'}
         // className='shadow-lg p-[10px] rounded-lg'
-        className={`${isLightMode ?'bg-[white] text-black shadow-lg p-[10px] rounded-lg' :'bg-[#191A26] text-white p-[15px]  rounded-lg'}`}
+        className={`${isLightMode ?'bg-[white] text-black shadow-lg p-[10px] rounded-lg' :'bg-[#191A26] text-white p-[10px] shadow-lg  rounded-lg'}`}
         >
             <Box
             margin={'auto'}
