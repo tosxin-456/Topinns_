@@ -1,10 +1,10 @@
-import { Flex , VStack, Box, Text , Image } from '@chakra-ui/react'
+import { Flex , VStack, Box, Text } from '@chakra-ui/react'
 // import React from 'react'
 // import { FaConnectdevelop } from "react-icons/fa";
 // import { SiBackendless } from "react-icons/si";
+// import { FaNode } from "react-icons/fa";
 import { SiNestjs } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
-import { FaNode } from "react-icons/fa";
 import { SiGoogletagmanager } from "react-icons/si";
 
 interface SkillsProps {
