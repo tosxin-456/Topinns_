@@ -22,6 +22,7 @@ function Skillset({isLightMode}:SkillsProps) {
         marginRight={'auto'}
         marginLeft={'20px'}
         marginTop={'25px'}
+        // height={'230px'}
         // className='shadow-lg p-[10px] rounded-lg'
         className={`${isLightMode ?'bg-[white] text-black shadow-lg p-[10px] rounded-lg' :'bg-[#191A26] text-white p-[10px] shadow-lg rounded-lg'}`}
         >
@@ -43,8 +44,9 @@ function Skillset({isLightMode}:SkillsProps) {
         width={'46%'}
         marginLeft={'auto'}
         marginRight={'20px'}
-        height={'150px'}
         marginTop={'25px'}
+        // height={'230px'}
+
         // className='shadow-lg p-[10px] rounded-lg'
         className={`${isLightMode ?'bg-[white] text-black shadow-lg p-[10px] rounded-lg' :'bg-[#191A26] text-white p-[10px] shadow-lg  rounded-lg'}`}
         >
