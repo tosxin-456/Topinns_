@@ -16,7 +16,7 @@ function Skillset({isLightMode}:SkillsProps) {
         // className='shadow-lg p-[10px] rounded-lg'
         className={`${isLightMode ?'bg-[white] text-black shadow-lg p-[15px] rounded-lg' :'bg-[#191A26] text-white p-[10px]  rounded-lg'}`}
         >
-        <Text  className='text-[19px] text-center'>
+        <Text  className='text-[17px] text-center'>
            Front-end Development Expertise
         </Text>
         <Text fontFamily='"Poppins", "sans-serif"' className='text-[13px] text-center'>
@@ -30,7 +30,7 @@ function Skillset({isLightMode}:SkillsProps) {
         // className='shadow-lg p-[10px] rounded-lg'
         className={`${isLightMode ?'bg-[white] text-black shadow-lg p-[10px] rounded-lg' :'bg-[#191A26] text-white p-[7px]  rounded-lg'}`}
         >
-        <Text fontFamily='"Poppins", "sans-serif"' className='text-[17px] text-center'>
+        <Text className='text-[17px] text-center'>
            Back-end Development Expertise
         </Text>
         <Text fontFamily='"Poppins", "sans-serif"' className='text-[13px] text-center'>
@@ -43,7 +43,7 @@ function Skillset({isLightMode}:SkillsProps) {
         // className='shadow-lg p-[10px] rounded-lg'
         className={`${isLightMode ?'bg-[white] text-black shadow-lg p-[10px] rounded-lg' :'bg-[#191A26] text-white p-[7px]  rounded-lg'}`}
         >
-        <Text  className='text-[18px] text-center'>
+        <Text  className='text-[17px] text-center'>
            Management and Development
         </Text>
         <Text fontFamily='"Poppins", "sans-serif"' className='text-[13px] text-center'>
