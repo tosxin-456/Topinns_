@@ -20,7 +20,7 @@ function Skillset({isLightMode}:SkillsProps) {
         <Box
         width={'46%'}
         marginRight={'auto'}
-        marginLeft={'20px'}
+        marginLeft={'10px'}
         marginTop={'25px'}
         // height={'230px'}
         // className='shadow-lg p-[10px] rounded-lg'
@@ -43,7 +43,7 @@ function Skillset({isLightMode}:SkillsProps) {
         <Box
         width={'46%'}
         marginLeft={'auto'}
-        marginRight={'20px'}
+        marginRight={'10px'}
         marginTop={'25px'}
         // height={'230px'}
 
