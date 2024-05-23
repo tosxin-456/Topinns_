@@ -84,7 +84,7 @@ function Skillset({isLightMode}:SkillsProps) {
         </Text>
             </Box >
         <Text fontFamily='"Poppins", "sans-serif"' className='text-[15px] text-center'>
-        I efficiently manage development workflows and collaborate with teams to deliver high-quality projects on time.
+        I streamline development workflows, foster collaborative teams, and deliver top-notch projects on schedule. When necessary, I also drive modernization efforts to ensure cutting-edge results.
         </Text>
         </Box>
     </VStack>
