@@ -18,7 +18,7 @@ function Skillset({isLightMode}:SkillsProps) {
         <Text className='text-3xl m-[50px]'>My SkillSet</Text>
       <Flex>
         <Box
-        width={'46%'}
+        width={'44%'}
         marginRight={'auto'}
         marginLeft={'10px'}
         marginTop={'25px'}
@@ -31,7 +31,7 @@ function Skillset({isLightMode}:SkillsProps) {
         width={'fit-content'}
         display={'flex'}
         >
-        <SiNestjs className='w-[50px] h-[30px]  mr-auto' />
+        <SiNestjs className='w-[40px] h-[30px]  mr-auto' />
         <Text width={'fit-content'} className='text-[18px] ml-2 text-start flex'>
            Back-end Development Expertise
         </Text>
@@ -41,7 +41,7 @@ function Skillset({isLightMode}:SkillsProps) {
         </Text>
         </Box>
         <Box
-        width={'46%'}
+        width={'44%'}
         marginLeft={'auto'}
         marginRight={'10px'}
         marginTop={'25px'}
@@ -56,7 +56,7 @@ function Skillset({isLightMode}:SkillsProps) {
             display={'flex'}
             height={'fit-content'}
             >
-          <FaReact className='w-[50px] h-[30px] mr-auto' />
+          <FaReact className='w-[40px] h-[30px] mr-auto' />
         <Text  className='text-[18px] text-start ml-2 '>
         Front-end Development Expertise
         </Text>
