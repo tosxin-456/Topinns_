@@ -1,0 +1,142 @@
+#works_image {
+    position: relative;
+    background-image: url('../assets/musicians.jpeg');
+    transition: 10s;
+    height: 100vh;
+    background-position: center;
+    background-size: 65% 100%;
+    background-repeat: no-repeat;
+    animation: changingImages 60s  infinite;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  #works_image::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  h1{
+    margin-top: auto;
+    /* background-color: aqua; */
+  
+  }
+  
+  nav {
+    position: absolute;
+    opacity: 0.8;
+    z-index: 2;
+  }
+  
+  .background {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    transition: 10s;
+  }
+  
+  .backgrounDiv {
+    /* position: fixed; */
+    background-color: rgba(0, 0, 0, 0.5); 
+    
+  }
+  
+  .row{
+    width: 50px;
+    background-color: aquamarine;
+  }
+  
+  .playlistCovers {
+    position: absolute;
+    opacity: 0.9;
+    background-color: aqua;
+  
+  }
+  
+  @keyframes changingImages {
+    0% {
+      background-image: url('../assets/bob marley.jpeg');
+    }
+    5% {
+     background-image: url('../assets/The Beatles.jpeg');
+    }
+    10% {
+   
+      background-image: url('../assets/taylorBook.jpg');
+    }
+    15% {
+      background-image: url('../assets/weekend2.jpg');
+    }
+    20% {
+     
+    background-image: url('../assets/wizkid.jpeg');
+   }
+    25% {
+    background-image: url('../assets/Davido.jpeg');
+   }
+   30% {
+     background-image: url('../assets/drake.jpg');
+   }
+  35% {
+   
+   background-image: url('../assets/harryStyles.jpeg');
+  }
+  40% {
+   
+   background-image: url('../assets/Sia.jpeg');
+  }
+  45% {
+   
+    background-image: url('../assets/coldplay.jpeg');
+   }
+   50% {
+    background-image: url('../assets/burnaBoy.jpeg');
+  }
+  55% {
+   background-image: url('../assets/samSmith.jpeg');
+  }
+  60% {
+  
+    background-image: url('../assets/kanye.jpeg');
+  }
+  65% {
+    background-image: url('../assets/kendrick.jpeg');
+  }
+  70% {
+   
+  background-image: url('../assets/Queen II.jpeg');
+  }
+  75% {
+   
+  background-image: url('../assets/Fleetwood.jpeg');
+  }
+  80% {
+  
+   background-image: url('../assets/justinBieber.jpeg');
+  }
+  85% {
+  
+  background-image: url('../assets/adele.jpeg');
+  }
+  90% {
+  
+  background-image: url('../assets/selenaandAriana.jpeg');
+  }
+  95% {
+  
+  background-image: url('../assets/Abba.jpeg');
+  }
+  }
+  
+  @media screen and (max-width:550px) {
+    #works_image {
+      background-size: cover;
+    }
+  }

@@ -93,7 +93,7 @@ import { Box,
      <Text
     fontFamily="'Clash Display', sans-serif"
     _hover={{ textDecoration: "underline" , cursor:'pointer', color:'#6A98F0'}}
-     
+    as="a" href="#projects"
      >projects</Text>
      <Text
     fontFamily="'Clash Display', sans-serif"
@@ -261,7 +261,7 @@ import { Box,
     fontFamily="'Clash Display', sans-serif"
      className={`${isLightMode ?'bg-white color-black  ' :'bg-[#141613] text-white '}`}
     _hover={{ textDecoration: "underline" , cursor:'pointer', color:'#6A98F0'}}
-     
+    as="a" href="#projects"
      >projects</Text>
      <Text
     fontFamily="'Clash Display', sans-serif"

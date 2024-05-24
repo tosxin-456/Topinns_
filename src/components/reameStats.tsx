@@ -44,7 +44,7 @@ function ReadmeStats() {
     >
       <MovingCircles color={color} />
       {/* Basic color picker */}
-      <Text className='text-3xl'>Development Dashboard</Text>
+      <Text className='text-3xl m-[50px]'>Development Dashboard</Text>
       <input
         type="color"
         value={color}

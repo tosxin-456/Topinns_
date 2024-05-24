@@ -8,7 +8,7 @@ import profile from '../assets/profile images/profile1.jpg'
 function AboutHeader() {
   return (
     <Box className=' w-[90%] m-auto lg:w-[80%] '>
-         <Text className='text-3xl text-center mt-[30px] '>
+         <Text className='text-3xl text-center m-[50px] '>
           A Little 'bout {" "} <span className='text-[orange] shadow-sm' >Me</span> 
           </Text>
         <Box className='flex flex-col lg:flex-row' >

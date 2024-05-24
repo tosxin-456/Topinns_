@@ -5,6 +5,7 @@ import Footer from './components/footer';
 import Navbar from './components/navbar';
 import Home from './pages/home';
 import About from './pages/about';
+import Projects from './pages/projects';
 
 type SectionRefs = {
   home: HTMLElement | null;
@@ -98,6 +99,9 @@ const App: React.FC = () => {
         </div>
         <div id="about" ref={el => sectionRefs.current.about = el}>
           <About isLightMode={isLightMode} />
+        </div>
+        <div id="projects" ref={el => sectionRefs.current.about = el}>
+           <Projects isLightMode={isLightMode}/>
         </div>
         <Footer isLightMode={isLightMode} />
       </div>

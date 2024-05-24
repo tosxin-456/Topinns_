@@ -15,7 +15,7 @@ interface SkillsProps {
 function Skillset({isLightMode}:SkillsProps) {
   return (
     <VStack>
-        <Text className='text-3xl'>My SkillSet</Text>
+        <Text className='text-3xl m-[50px]'>My SkillSet</Text>
       <Flex>
         <Box
         width={'46%'}
@@ -24,15 +24,15 @@ function Skillset({isLightMode}:SkillsProps) {
         marginTop={'25px'}
         // height={'230px'}
         // className='shadow-lg p-[10px] rounded-lg'
-        className={`${isLightMode ?'bg-[white] text-black shadow-lg p-[10px] rounded-lg' :'bg-[#191A26] text-white p-[10px] shadow-lg rounded-lg'}`}
+        className={`${isLightMode ?'bg-[white] text-black shadow-lg p-[20px] rounded-lg' :'bg-[#191A26] text-white p-[10px] shadow-lg rounded-lg'}`}
         >
         <Box
         margin={'auto'}
         width={'fit-content'}
         display={'flex'}
         >
-        <Text width={'fit-content'} className='text-[18px] text-start flex'>
-        <SiNestjs className='w-[50px] h-[30px] mr-auto' />
+        <SiNestjs className='w-[50px] h-[30px]  mr-auto' />
+        <Text width={'fit-content'} className='text-[18px] ml-2 text-start flex'>
            Back-end Development Expertise
         </Text>
         </Box>    
@@ -48,7 +48,7 @@ function Skillset({isLightMode}:SkillsProps) {
         // height={'230px'}
 
         // className='shadow-lg p-[10px] rounded-lg'
-        className={`${isLightMode ?'bg-[white] text-black shadow-lg p-[10px] rounded-lg' :'bg-[#191A26] text-white p-[10px] shadow-lg  rounded-lg'}`}
+        className={`${isLightMode ?'bg-[white] text-black shadow-lg p-[20px] rounded-lg' :'bg-[#191A26] text-white p-[10px] shadow-lg  rounded-lg'}`}
         >
             <Box
             margin={'auto'}
@@ -57,7 +57,7 @@ function Skillset({isLightMode}:SkillsProps) {
             height={'fit-content'}
             >
           <FaReact className='w-[50px] h-[30px] mr-auto' />
-        <Text  className='text-[18px] text-start'>
+        <Text  className='text-[18px] text-start ml-2 '>
         Front-end Development Expertise
         </Text>
             </Box>
@@ -78,7 +78,7 @@ function Skillset({isLightMode}:SkillsProps) {
         display={'flex'}
         // height={'30px'}
         >
-        <SiGoogletagmanager className=' mr-[5px] mt-[5px]' /> 
+        <SiGoogletagmanager className='w-[20px] h-[20px] mr-[5px] mt-[5px]' /> 
         <Text  className='text-[18px] text-center'>
           Management, Development and Maintenance
         </Text>

@@ -1,0 +1,70 @@
+import diamond from '../assets/project images/daimonddreams.png';
+import bethel from '../assets/project images/Bethelteens.png'
+import { FaGithub  } from "react-icons/fa";
+import { IconType } from 'react-icons';
+import { FaCss3Alt } from "react-icons/fa";
+// import { IoLogoJavascript } from "react-icons/io5";
+import { FaHtml5 } from "react-icons/fa";
+import { FaNode } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+// import { FaFigma } from "react-icons/fa6";
+// import { SiTypescript } from "react-icons/si";
+// import { SiTailwindcss } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+// import { SiChakraui } from "react-icons/si";
+// import { FaPython } from "react-icons/fa";
+// import { SiJupyter } from "react-icons/si";
+
+// Define the structure of the Projects interface
+interface Projects {
+  title: string;
+  image: string;
+  about: string;
+  caseStudy: string;
+  liveDemo: string;
+  git: { icon: IconType; url: string };  // Define git as an object with icon and url
+  languages: { icon: IconType; name: string }[];  // Define languages as an array of objects with icon and name
+  index: number;
+}
+
+// Define the projects array with the correct structure
+export const projects: Projects[] = [
+  {
+    index: 1,
+    title: 'Bethel Teens Club',
+    about: `
+    Bethel Teens Club: A vibrant online community for Christian teenagers. I designed and developed a welcoming website for this dynamic club, providing a safe space for members to connect, grow, and inspire each other. With a user-friendly interface and engaging features, this site fosters a sense of belonging and spiritual growth among its young users. The website's features include a discussion forum, event calendar, and resource library, all carefully crafted to support the club's mission and promote a sense of community and connection among its members. By creating this online hub, I aimed to empower the next generation of leaders to deepen their faith, build meaningful relationships, and shine their light for Christ.
+    `,
+    caseStudy: 'hello world to all the planets',
+    image: bethel,
+    git: { icon: FaGithub, url: 'https://github.com/tosxin-456/Bethel-Teens' },  // Assign the URL to the git property
+    liveDemo: 'https://bethel-teens-club.netlify.app/',
+    languages: [  // Define languages with icons and names
+    { icon: FaHtml5, name: 'Html' },
+      { icon: FaReact, name: 'React' },
+      { icon: FaCss3Alt, name: 'Css' }
+    //   { icon: IoLogoJavascript, name: 'GitHub' }
+
+    ]
+  },
+  {
+    index: 2,
+    title: 'Diamond Dreams Evenst and Center',
+    about:`
+    I worked on Diamond Dreams, a dynamic website featuring e-commerce, blogging, and academy registration. I collaborated with a team member on API consumption and solo-handled backend development and integration. The project showcases my full-stack skills, including API integration for efficient data management and a fully functional admin dashboard for effortless content management, all while providing a seamless user experience across various sections. A rewarding project that demonstrates my ability to build comprehensive and user-friendly websites
+      `,
+    caseStudy: 'hello world to all the planets',
+    image: diamond,
+    git: { icon: FaGithub, url: 'https://github.com/tosxin-456/diamond-dreams' },  // 
+    liveDemo: 'https://diamond-dreams-umber.vercel.app',
+    languages: [  // Define languages with icons and names
+    { icon: FaHtml5, name: 'Html' },
+    { icon: FaReact, name: 'React' },
+    { icon: SiMongodb, name: 'MongoDb' },
+      { icon: FaNode, name: 'Node.js' }
+
+    ]
+  },
+];
+
+

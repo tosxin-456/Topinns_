@@ -1,7 +1,7 @@
 // import React from 'react'
 import { Box, Text } from '@chakra-ui/react'
 import { feedback } from '../utils/feedback'
-import Reviews from './reviews'
+import Reviews from './reviewsCard'
 
 interface SkillsProps {
     isLightMode: boolean; // Assuming this prop is passed to Home component
@@ -11,7 +11,7 @@ interface SkillsProps {
 function Review({isLightMode}:SkillsProps) {
   return (
     <Box>
-        <Text className='text-3xl text-center mt-[30px]' >Reviews</Text>
+        <Text className='text-3xl text-center m-[50px]' >Reviews</Text>
      
     <Box
     display="flex"

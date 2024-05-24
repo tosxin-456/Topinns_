@@ -18,7 +18,7 @@ import { IoLogoGithub } from "react-icons/io5";
 function ProgrammingExpertise() {
   return (
     <Box>
-      <Text className='text-3xl text-center mt-[30px] ' >
+      <Text className='text-3xl text-center m-[50px] ' >
          My  Expertise
       </Text>
       <Box
