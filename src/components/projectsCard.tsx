@@ -44,7 +44,7 @@ const ProjectCard = ({ project, isLightMode }: ProjectCardProps) => {
         paddingBottom="40px"
         paddingRight="25px"
         paddingLeft="25px"
-        className={`${isLightMode ? 'bg-[white] text-black scroll shadow-lg mt-[15px] p-[15px] rounded-lg' : 'bg-[#191A26] text-white p-[15px] shadow-lg rounded-lg scroll mt-[15px]'} lg:w-[55%]`}
+        className={`${isLightMode ? 'bg-[white] text-black scroll shadow-lg mt-[15px] p-[13px] rounded-lg' : 'bg-[#191A26] text-white p-[13px] shadow-lg rounded-lg scroll mt-[15px]'} lg:w-[55%]`}
       >
         <Heading size="md" mt="3" className="text-2xl">{project.title}</Heading>
         <Text
@@ -76,7 +76,7 @@ const ProjectCard = ({ project, isLightMode }: ProjectCardProps) => {
           </Box>
           <Box className="flex ml-auto mt-auto mb-auto" gap="7">
             {project.languages.map((language, index) => (
-              <IconContext.Provider key={index} value={{ size: '1.5em' }}>
+              <IconContext.Provider key={index} value={{ size: '1.4em' }}>
                 <Box position="relative" className="group">
                   <language.icon />
                   <Text

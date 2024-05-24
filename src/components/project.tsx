@@ -17,7 +17,7 @@ const ProjectsList = ({ isLightMode }: ProjectsListProps) => {
         gap="5"
         margin="auto"
         boxShadow="lg"
-        className='w-[90%] lg:w-[80%]'
+        className='w-[95%] lg:w-[80%]'
       >
         {projects.map((project) => (
           <ProjectCard key={project.index} project={project} isLightMode={isLightMode} />
