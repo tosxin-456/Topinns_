@@ -15,9 +15,9 @@ const ProjectsList = ({ isLightMode }: ProjectsListProps) => {
         flexWrap="wrap"
         mt="15px"
         gap="5"
-        width="80%"
         margin="auto"
         boxShadow="lg"
+        className='w-[90%] lg:w-[80%]'
       >
         {projects.map((project) => (
           <ProjectCard key={project.index} project={project} isLightMode={isLightMode} />

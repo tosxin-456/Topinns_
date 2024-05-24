@@ -1,5 +1,6 @@
-import diamond from '../assets/project images/daimonddreams.png';
-import bethel from '../assets/project images/Bethelteens.png'
+import diamond from '../assets/project images/diamonddreams.png';
+import bethel from '../assets/project images/Bethelteens.png';
+import senex from '../assets/project images/senexCare.png';
 import { FaGithub  } from "react-icons/fa";
 import { IconType } from 'react-icons';
 import { FaCss3Alt } from "react-icons/fa";
@@ -7,8 +8,8 @@ import { FaCss3Alt } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { FaNode } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
-// import { FaFigma } from "react-icons/fa6";
-// import { SiTypescript } from "react-icons/si";
+import { FaFigma } from "react-icons/fa6";
+import { SiTypescript } from "react-icons/si";
 // import { SiTailwindcss } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 // import { SiChakraui } from "react-icons/si";
@@ -62,6 +63,26 @@ export const projects: Projects[] = [
     { icon: FaReact, name: 'React' },
     { icon: SiMongodb, name: 'MongoDb' },
       { icon: FaNode, name: 'Node.js' }
+
+    ]
+  },
+  {
+    index: 2,
+    title: 'senexCare',
+    about:`
+    As Team Lead, I guided the development of SenexCare, an innovative app for seniors to track medication intake and monitor progress through interactive graphs. I collaborated on backend development, worked with the frontend team, and integrated APIs, including Gemini AI for personalized reminders. I designed the UI on Figma, ensuring a seamless user experience.
+    We successfully submitted SenexCare to Google and received a Certificate of Participation, a testament to our hard work and dedication. I'm proud to have led a team that created a meaningful solution for seniors and caregivers, making medication management more accessible and efficient.
+      `,
+    caseStudy: 'hello world to all the planets',
+    image: senex,
+    git: { icon: FaGithub, url: 'https://github.com/GDSC-Unijos/Health-App-Frontend' },  // 
+    liveDemo: 'https://senex-care.vercel.app/',
+    languages: [  // Define languages with icons and names
+    { icon: SiTypescript, name: 'Typscript' },
+    { icon: FaReact, name: 'React' },
+    { icon: SiMongodb, name: 'MongoDb' },
+    { icon: FaNode, name: 'Node.js' },
+    { icon: FaFigma, name: 'Figma' }
 
     ]
   },

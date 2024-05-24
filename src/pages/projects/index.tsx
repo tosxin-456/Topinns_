@@ -12,7 +12,7 @@ function Projects({isLightMode}:ProjectProps) {
  
     
     return (
-        <Box fontFamily="'Clash Display', sans-serif" id='aboutUs'>
+        <Box fontFamily="'Clash Display', sans-serif">
         <ProjectsList isLightMode={isLightMode}  />
         </Box>
   )
