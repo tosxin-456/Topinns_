@@ -41,8 +41,8 @@ export const projects: Projects[] = [
     liveDemo: 'https://bethel-teens-club.netlify.app/',
     languages: [  // Define languages with icons and names
     { icon: FaHtml5, name: 'Html' },
-      { icon: FaReact, name: 'React' },
-      { icon: FaCss3Alt, name: 'Css' }
+    { icon: FaCss3Alt, name: 'Css' },
+      { icon: FaReact, name: 'React' }
     //   { icon: IoLogoJavascript, name: 'GitHub' }
 
     ]
