@@ -9,6 +9,7 @@ interface ProjectCardProps {
     about: string;
     caseStudy: string;
     liveDemo: string;
+    logo:string;
     git: { icon: IconType; url: string };
     languages: { icon: IconType; name: string }[];
   };
@@ -46,6 +47,10 @@ const ProjectCard = ({ project, isLightMode }: ProjectCardProps) => {
         paddingLeft="25px"
         className={`${isLightMode ? 'bg-[white] text-black scroll shadow-lg mt-[15px] p-[13px] rounded-lg' : 'bg-[#191A26] text-white p-[13px] shadow-lg rounded-lg scroll mt-[15px]'} lg:w-[55%]`}
       >
+        <Image
+        width={'60px'}
+         src={project.logo}>
+        </Image>
         <Heading size="md" mt="3" className="text-2xl">{project.title}</Heading>
         <Text
           fontFamily='"Poppins", "sans-serif"'

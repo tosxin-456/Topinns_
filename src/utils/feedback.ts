@@ -6,7 +6,7 @@ interface Feedback {
   rate: number;
   img: string;
   msg: string;
-  index: number
+  index: number;
 }
 
 
