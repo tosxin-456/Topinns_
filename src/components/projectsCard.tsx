@@ -76,7 +76,7 @@ const ProjectCard = ({ project, isLightMode }: ProjectCardProps) => {
           </Box>
           <Box className="flex ml-auto mt-auto mb-auto" gap="7">
             {project.languages.map((language, index) => (
-              <IconContext.Provider key={index} value={{ size: '1.4em' }}>
+              <IconContext.Provider key={index} value={{ size: '1.45em' }}>
                 <Box position="relative" className="group">
                   <language.icon />
                   <Text
