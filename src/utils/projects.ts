@@ -2,6 +2,7 @@ import diamond from '../assets/project images/diamonddreams.png';
 import bethel from '../assets/project images/Bethelteens.png';
 import senex from '../assets/project images/senexCare.png';
 import senexLogo from '../assets/project images/senexLogo.png';
+import betheLogo from '../assets/project images/bethelLogo.png';
 
 import { FaGithub  } from "react-icons/fa";
 import { IconType } from 'react-icons';
@@ -39,7 +40,7 @@ export const projects: Projects[] = [
     about: `
     Bethel Teens Club: A vibrant online community for Christian teenagers. I designed and developed a welcoming website for this dynamic club, providing a safe space for members to connect, grow, and inspire each other. With a user-friendly interface and engaging features, this site fosters a sense of belonging and spiritual growth among its young users. The website's features include a discussion forum, event calendar, and resource library, all carefully crafted to support the club's mission and promote a sense of community and connection among its members. By creating this online hub, I aimed to empower the next generation of leaders to deepen their faith, build meaningful relationships, and shine their light for Christ.
     `,
-    logo:'https://bethel-teens-club.netlify.app/assets/Screenshot%20(90)-add84d63.png',
+    logo:betheLogo,
     caseStudy: 'hello world to all the planets',
     image: bethel,
     git: { icon: FaGithub, url: 'https://github.com/tosxin-456/Bethel-Teens' },  // Assign the URL to the git property
