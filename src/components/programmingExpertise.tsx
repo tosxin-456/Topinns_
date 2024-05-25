@@ -13,6 +13,7 @@ import { SiChakraui } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 import { SiJupyter } from "react-icons/si";
 import { IoLogoGithub } from "react-icons/io5";
+import { SiExpress } from "react-icons/si";
 
 
 function ProgrammingExpertise() {
@@ -50,9 +51,10 @@ function ProgrammingExpertise() {
        <SiJupyter className='h-[65px] w-[65px] m-[5px]' />
       </Box>
       <Box
-      justifyContent={'center'}
+      justifyContent={'space-between'}
       className='flex w-3/4 lg:w-1/2 m-auto mt-[20px]' >
        <IoLogoGithub className='h-[65px] w-[65px] m-[5px]' />
+       <SiExpress className='h-[65px] w-[65px] m-[5px]'/>
       </Box>
     </Box>
   )

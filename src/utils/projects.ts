@@ -3,16 +3,20 @@ import bethel from '../assets/project images/Bethelteens.png';
 import senex from '../assets/project images/senexCare.png';
 import senexLogo from '../assets/project images/senexLogo.png';
 import betheLogo from '../assets/project images/bethelLogo.png';
+import medlink from '../assets/project images/medlink.png';
+import medlinkLogo from '../assets/project images/medlinkLogo.svg';
+
 
 import { FaGithub  } from "react-icons/fa";
 import { IconType } from 'react-icons';
 import { FaCss3Alt } from "react-icons/fa";
-// import { IoLogoJavascript } from "react-icons/io5";
+import { IoLogoJavascript } from "react-icons/io5";
 import { FaHtml5 } from "react-icons/fa";
 import { FaNode } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa6";
 import { SiTypescript } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
 // import { SiTailwindcss } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 // import { SiChakraui } from "react-icons/si";
@@ -48,14 +52,14 @@ export const projects: Projects[] = [
     languages: [  // Define languages with icons and names
     { icon: FaHtml5, name: 'Html' },
     { icon: FaCss3Alt, name: 'Css' },
-      { icon: FaReact, name: 'React' }
+    { icon: FaReact, name: 'React' }
     //   { icon: IoLogoJavascript, name: 'GitHub' }
 
     ]
   },
   {
     index: 2,
-    title: 'Diamond Dreams Evenst and Center',
+    title: 'Diamond Dreams Events and Center',
     about:`
     I worked on Diamond Dreams, a dynamic website featuring e-commerce, blogging, and academy registration. I collaborated with a team member on API consumption and solo-handled backend development and integration. The project showcases my full-stack skills, including API integration for efficient data management and a fully functional admin dashboard for effortless content management, all while providing a seamless user experience across various sections. A rewarding project that demonstrates my ability to build comprehensive and user-friendly websites
       `,
@@ -68,16 +72,16 @@ export const projects: Projects[] = [
     { icon: FaHtml5, name: 'Html' },
     { icon: FaReact, name: 'React' },
     { icon: SiMongodb, name: 'MongoDb' },
-      { icon: FaNode, name: 'Node.js' }
+      { icon: FaNode, name: 'Node.js' },
+    { icon: SiExpress, name: 'Express.js' }
 
     ]
   },
   {
-    index: 2,
+    index: 3,
     title: 'senexCare',
     about:`
-    As Team Lead, I guided the development of SenexCare, an innovative app for seniors to track medication intake and monitor progress through interactive graphs. I collaborated on backend development, worked with the frontend team, and integrated APIs, including Gemini AI for personalized reminders. I designed the UI on Figma, ensuring a seamless user experience.
-    We successfully submitted SenexCare to Google and received a Certificate of Participation, a testament to our hard work and dedication. I'm proud to have led a team that created a meaningful solution for seniors and caregivers, making medication management more accessible and efficient.
+    As Team Lead, I guided the development of senexCare, an innovative app for seniors to track medication intake and monitor progress through interactive graphs. I collaborated on backend development, worked with the frontend team, and integrated APIs, including Gemini AI for personalized reminders. I designed the UI on Figma, ensuring a seamless user experience. senexCare also features emergency alert functionality, promptly notifying designated contacts in case of missed medication or unusual activity. Additionally, it utilizes Google Maps to calculate the closest hospital, providing critical location information in times of need. We successfully submitted senexCare to Google and received a Certificate of Participation, a testament to our hard work and dedication. I'm proud to have led a team that created a meaningful solution for seniors and caregivers, making medication management more accessible, efficient, and safe.
       `,
     logo:senexLogo,  
     caseStudy: 'hello world to all the planets',
@@ -85,11 +89,31 @@ export const projects: Projects[] = [
     git: { icon: FaGithub, url: 'https://github.com/GDSC-Unijos/Health-App-Frontend' },  // 
     liveDemo: 'https://senex-care.vercel.app/',
     languages: [  // Define languages with icons and names
+    { icon: SiExpress, name: 'Express.js' },
     { icon: SiTypescript, name: 'Typscript' },
     { icon: FaReact, name: 'React' },
     { icon: SiMongodb, name: 'MongoDb' },
     { icon: FaNode, name: 'Node.js' },
     { icon: FaFigma, name: 'Figma' }
+
+    ]
+  },
+  {
+    index: 4,
+    title: 'Medlink',
+    about:`
+    MedLink is a comprehensive health application that revolutionizes medical appointment booking, scheduling, and record management. This innovative solution allows users to effortlessly book appointments, collect medication from pharmacies, and access lab test results, all while securely storing medical records in the cloud. As the Team Lead and Project Manager, I oversaw the development of MedLink's backend, ensuring a robust and scalable infrastructure to support the app's features. Our team's hard work and dedication to improving healthcare management paid off, earning us first place at Pitch Friday, a competition hosted by nHub Foundation. MedLink's user-centric design and seamless functionality make it an invaluable tool for streamlining healthcare management, and we're proud to have created a solution that makes a real difference in people's lives.
+      `,
+    logo:medlinkLogo,  
+    caseStudy: 'hello world to all the planets',
+    image: medlink,
+    git: { icon: FaGithub, url: 'https://github.com/tosxin-456/Hospital-managment' },  // 
+    liveDemo: 'https://medlink-v1.netlify.app/',
+    languages: [  // Define languages with icons and names
+    { icon: SiExpress, name: 'Express.js' },
+    { icon: IoLogoJavascript, name: 'Javascript' },
+    { icon: SiMongodb, name: 'MongoDb' },
+    { icon: FaNode, name: 'Node.js' },
 
     ]
   },

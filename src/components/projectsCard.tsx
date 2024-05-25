@@ -54,7 +54,7 @@ const ProjectCard = ({ project, isLightMode }: ProjectCardProps) => {
         <Heading size="md" mt="3" className="text-2xl">{project.title}</Heading>
         <Text
           fontFamily='"Poppins", "sans-serif"'
-          mt="20px" mb="20px" className="text-md lg:w-[80%]"
+          mt="20px" mb="20px" className="text-sm lg:w-[80%]"
         >
           {project.about}
         </Text>
