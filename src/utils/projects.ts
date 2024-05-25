@@ -86,7 +86,7 @@ export const projects: Projects[] = [
     index: 3,
     title: 'senexCare',
     about:`
-    As Team Lead, I guided the development of senexCare, an innovative app for seniors to track medication intake and monitor progress through interactive graphs. I collaborated on backend development, worked with the frontend team, and integrated APIs, including Gemini AI for personalized reminders. I designed the UI on Figma, ensuring a seamless user experience. senexCare also features emergency alert functionality, promptly notifying designated contacts in case of missed medication or unusual activity. Additionally, it utilizes Google Maps to calculate the closest hospital, providing critical location information in times of need. We successfully submitted senexCare to Google and received a Certificate of Participation, a testament to our hard work and dedication. I'm proud to have led a team that created a meaningful solution for seniors and caregivers, making medication management more accessible, efficient, and safe.
+    As Team Lead, I spearheaded senexCare, an innovative app designed to enhance medication adherence for seniors. I oversaw backend development, collaborated with the UI/UX team, and integrated AI-powered reminders (like Gemini) for personalization. The user-friendly interface, designed on Figma, ensures a smooth experience.  senexCare features emergency alerts, notifying designated contacts of missed medication or unusual activity.  Integration with Google Maps allows for quick location of nearby hospitals in case of emergencies.  Our hard work culminated in successfully submitting senexCare to Google and receiving a Certificate of Participation. I'm proud to have led the creation of this impactful solution that empowers seniors and their caregivers with a more accessible, efficient, and safe medication management system.
       `,
     logo:senexLogo,  
     caseStudy: 'hello world to all the planets',
@@ -107,7 +107,7 @@ export const projects: Projects[] = [
     index: 4,
     title: 'Medlink',
     about:`
-    MedLink is a comprehensive health application that revolutionizes medical appointment booking, scheduling, and record management. This innovative solution allows users to effortlessly book appointments, collect medication from pharmacies, and access lab test results, all while securely storing medical records in the cloud. As the Team Lead and Project Manager, I oversaw the development of MedLink's backend, ensuring a robust and scalable infrastructure to support the app's features. Our team's hard work and dedication to improving healthcare management paid off, earning us first place at Pitch Friday, a competition hosted by nHub Foundation. MedLink's user-centric design and seamless functionality make it an invaluable tool for streamlining healthcare management, and we're proud to have created a solution that makes a real difference in people's lives.
+    MedLink, a healthcare app I spearheaded as Team Lead, revolutionizes appointment booking, medication refills, and record management. This user-centric platform offers secure cloud storage for medical records. Our innovative solution, built with a robust backend infrastructure, empowers patients and simplifies healthcare.  Winning first place at nHub Foundation's Pitch Friday validates MedLink's potential to improve healthcare management for everyone.
       `,
     logo:medlinkLogo,  
     caseStudy: 'hello world to all the planets',
@@ -159,8 +159,8 @@ export const projects: Projects[] = [
       type: 'iframe',
       src: 'https://www.youtube.com/embed/qp0AZmb1vDA?si=7b1b1vLxT9rO_KMz'
     },
-    git: { icon: FaGithub, url: 'https://github.com/tosxin-456/Learn-Hub_E-Learning' },  // 
-    liveDemo: 'https://genuine-longma-828e44.netlify.app/',
+    git: { icon: FaGithub, url: 'https://github.com/tosxin-456/top-s-planet' },  // 
+    liveDemo: 'https://top-planet.vercel.app/',
     languages: [
       { icon: IoLogoJavascript, name: 'Javascript' },
       { icon: TbBrandThreejs, name: 'Three.js' },
