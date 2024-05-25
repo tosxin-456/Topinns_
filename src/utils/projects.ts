@@ -8,6 +8,7 @@ import medlinkLogo from '../assets/project images/medlinkLogo.svg';
 
 
 import { FaGithub  } from "react-icons/fa";
+import { SiPrivateinternetaccess } from "react-icons/si";
 import { IconType } from 'react-icons';
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -107,7 +108,7 @@ export const projects: Projects[] = [
     logo:medlinkLogo,  
     caseStudy: 'hello world to all the planets',
     image: medlink,
-    git: { icon: FaGithub, url: 'https://github.com/tosxin-456/Hospital-managment' },  // 
+    git: { icon: SiPrivateinternetaccess, url: '#' },  // 
     liveDemo: 'https://medlink-v1.netlify.app/',
     languages: [  // Define languages with icons and names
     { icon: SiExpress, name: 'Express.js' },

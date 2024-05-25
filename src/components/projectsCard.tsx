@@ -28,7 +28,7 @@ const ProjectCard = ({ project, isLightMode }: ProjectCardProps) => {
       >
       <Box 
       marginTop={"20px"}
-      className="lg:w-[40%] shadow-lg lg:shadow-none p-3 rounded-md lg:mt-[-15px] lg:ml-[-110px] relative group"
+      className="lg:w-[43%] shadow-lg lg:shadow-none p-3 rounded-md lg:mt-[-15px] lg:ml-[-110px] relative group"
       >
         <Image 
           src={project.image} 
