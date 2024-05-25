@@ -4,7 +4,9 @@ import senex from '../assets/project images/senexCare.png';
 import senexLogo from '../assets/project images/senexLogo.png';
 import betheLogo from '../assets/project images/bethelLogo.png';
 import medlink from '../assets/project images/medlink.png';
+import learnhub from '../assets/project images/learnHub.png';
 import medlinkLogo from '../assets/project images/medlinkLogo.svg';
+import learnHUbLogo from '../assets/project images/LEARN-HUB.svg';
 
 
 import { FaGithub  } from "react-icons/fa";
@@ -113,6 +115,31 @@ export const projects: Projects[] = [
     languages: [  // Define languages with icons and names
     { icon: SiExpress, name: 'Express.js' },
     { icon: IoLogoJavascript, name: 'Javascript' },
+    { icon: SiMongodb, name: 'MongoDb' },
+    { icon: FaNode, name: 'Node.js' },
+
+    ]
+  },
+  {
+    index: 5,
+    title: 'Learn Hub',
+    about:`
+    LearnHub is a comprehensive educational website offering courses and resources in frontend, backend, data science, machine learning, and more. The platform provides a user-friendly interface and robust infrastructure, supporting a supportive community of learners.
+
+    Developed by a dedicated team, led by me as Project Manager and Team Lead, LearnHub secured first position in a prestigious competition, demonstrating the team's commitment to high-quality educational resources. The platform empowers individuals to excel in coding, fostering a community that learns, grows, and succeeds together.
+    
+    LearnHub continues to inspire and educate, shaping the next generation of coding professionals.
+      `,
+    logo:learnHUbLogo,  
+    caseStudy: 'hello world to all the planets',
+    image: learnhub,
+    git: { icon: FaGithub, url: 'https://github.com/tosxin-456/Learn-Hub_E-Learning' },  // 
+    liveDemo: 'https://genuine-longma-828e44.netlify.app/',
+    languages: [  // Define languages with icons and names
+    { icon: FaHtml5, name: 'Html' },
+    { icon: FaCss3Alt, name: 'Css' },
+    { icon: IoLogoJavascript, name: 'Javascript' },
+    { icon: SiExpress, name: 'Express.js' },
     { icon: SiMongodb, name: 'MongoDb' },
     { icon: FaNode, name: 'Node.js' },
 
