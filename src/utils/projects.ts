@@ -6,6 +6,7 @@ import betheLogo from '../assets/project images/bethelLogo.png';
 import medlink from '../assets/project images/medlink.png';
 import learnhub from '../assets/project images/learnHub.png';
 import medlinkLogo from '../assets/project images/medlinkLogo.svg';
+import topLogo from '../assets/project images/Earth_Globe_Planet_-_Free_photo_on_Pixabay-removebg-preview.png';
 import learnHUbLogo from '../assets/project images/LEARN-HUB.svg';
 
 
@@ -152,7 +153,7 @@ export const projects: Projects[] = [
     about:`
     Top's Planets takes you on a 3D voyage through our solar system, crafted with React and Three.js. This interactive web app lets you explore planets, moons, and celestial wonders in a visually captivating environment. I utilized React to manage the interface and user interactions, while Three.js powered the stunning 3D graphics and animations.  This project highlights my expertise in building interactive React applications, creating immersive 3D visualizations, and translating scientific data into an engaging and educational experience.
     `,
-    logo: learnHUbLogo,
+    logo: topLogo,
     caseStudy: 'hello world to all the planets',
     image: {
       type: 'iframe',
