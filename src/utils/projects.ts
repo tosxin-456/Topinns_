@@ -148,7 +148,7 @@ export const projects: Projects[] = [
     ]
   },
   {
-    index: 5,
+    index: 6,
     title: `Top's Planets`,
     about:`
     Top's Planets takes you on a 3D voyage through our solar system, crafted with React and Three.js. This interactive web app lets you explore planets, moons, and celestial wonders in a visually captivating environment. I utilized React to manage the interface and user interactions, while Three.js powered the stunning 3D graphics and animations.  This project highlights my expertise in building interactive React applications, creating immersive 3D visualizations, and translating scientific data into an engaging and educational experience.
