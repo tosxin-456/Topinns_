@@ -41,7 +41,7 @@ const ProjectCard = ({ project, isLightMode }: ProjectCardProps) => {
             className="transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1" 
           />
         ) : project.image.type === 'iframe' ? (
-          <Box as="iframe" src={project.image.src} width="100%" height="300px" borderRadius="20px" />
+          <Box as="iframe" src={project.image.src} width="100%" className='group-hover:scale-105 group-hover:rotate-1 transition-transform duration-500' height="300px" borderRadius="20px" />
         ) : null}
       </Box>
       <Box
