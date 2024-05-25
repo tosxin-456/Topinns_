@@ -85,8 +85,8 @@ export const feedback: Feedback[] = [
   },
   {
     index:10,
-    name: 'Ekundayo Adedolapo',
-    title: 'Chartered Accountant ',
+    name: 'Francis Ocholi',
+    title: ' CEO Paycrest',
     rate: 4.6,
     img: Kelechi,
     msg: "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere dolor tempore natus, quibusdam commodi sit quidem voluptas quaerat, animi velit vel? Illum animi inventore asperiores laboriosam velit aperiam molestiae qui necessitatibus architecto, debitis aliquid!"
