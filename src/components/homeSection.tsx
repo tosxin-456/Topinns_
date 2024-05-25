@@ -5,8 +5,7 @@ import cv from '../assets/EKUNDAYO SHALLOM OSEJILO - CV.pdf'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
-// import { NavLink } from 'react-router-dom';
-
+import { GiTroll } from "react-icons/gi";
 
 
 interface FooterProps {
@@ -68,6 +67,9 @@ function HomeSection({isLightMode}:FooterProps) {
       </a>
       <a href='https://twitter.com/shallomekundayo'>
       <FaXTwitter className=" w-[50px] h-[30px] mt-[10px] transition duration-300 ease-in-out transform hover:scale-110" />
+      </a>
+      <a href='https://gitroll.io/profile/uyVQaDSRZD2dgfDdnTnTAUZoj4IZ2'>
+      <GiTroll className="  w-[50px] h-[30px] mt-[10px] transition duration-300 ease-in-out transform hover:scale-110" />
       </a>
       <a href='mailto:tosinekshally@gmail.com'>
       <MdOutlineEmail className="  w-[50px] h-[30px] mt-[10px] transition duration-300 ease-in-out transform hover:scale-110" />
