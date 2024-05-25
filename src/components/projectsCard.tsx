@@ -5,11 +5,11 @@ interface ProjectCardProps {
   project: {
     index: number;
     title: string;
-    image: string;
+    image: string | { type: string; src: string };
     about: string;
     caseStudy: string;
     liveDemo: string;
-    logo:string;
+    logo: string;
     git: { icon: IconType; url: string };
     languages: { icon: IconType; name: string }[];
   };
@@ -25,20 +25,24 @@ const ProjectCard = ({ project, isLightMode }: ProjectCardProps) => {
       p="8"
       boxShadow="lg"
       className="flex lg:flex-row-reverse flex-col"
-      >
+    >
       <Box 
-      marginTop={"20px"}
-      className="lg:w-[43%] shadow-lg lg:shadow-none p-3 rounded-md lg:mt-[-15px] lg:ml-[-110px] relative group"
+        marginTop={"20px"}
+        className="lg:w-[43%] shadow-lg lg:shadow-none p-3 rounded-md lg:mt-[-15px] lg:ml-[-110px] relative group"
       >
-        <Image 
-          src={project.image} 
-          alt={project.title} 
-          height="300px"
-          width="100%"
-          borderRadius="20px"
-          objectFit="cover"
-          className="transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1" 
-        />
+        {typeof project.image === 'string' ? (
+          <Image 
+            src={project.image} 
+            alt={project.title} 
+            height="300px"
+            width="100%"
+            borderRadius="20px"
+            objectFit="cover"
+            className="transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1" 
+          />
+        ) : project.image.type === 'iframe' ? (
+          <Box as="iframe" src={project.image.src} width="100%" height="300px" borderRadius="20px" />
+        ) : null}
       </Box>
       <Box
         paddingTop="40px"
@@ -48,9 +52,9 @@ const ProjectCard = ({ project, isLightMode }: ProjectCardProps) => {
         className={`${isLightMode ? 'bg-[white] text-black scroll shadow-lg mt-[15px] p-[13px] rounded-lg' : 'bg-[#191A26] text-white p-[13px] shadow-lg rounded-lg scroll mt-[15px]'} lg:w-[55%]`}
       >
         <Image
-        width={'60px'}
-         src={project.logo}>
-        </Image>
+          width={'60px'}
+          src={project.logo}
+        />
         <Heading size="md" mt="3" className="text-2xl">{project.title}</Heading>
         <Text
           fontFamily='"Poppins", "sans-serif"'

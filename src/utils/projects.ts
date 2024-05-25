@@ -20,23 +20,24 @@ import { FaReact } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa6";
 import { SiTypescript } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
-// import { SiTailwindcss } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
+import { TbBrandThreejs } from "react-icons/tb";
+// import { SiTailwindcss } from "react-icons/si";
 // import { SiChakraui } from "react-icons/si";
 // import { FaPython } from "react-icons/fa";
 // import { SiJupyter } from "react-icons/si";
 
 // Define the structure of the Projects interface
 interface Projects {
-  title: string;
-  image: string;
-  about: string;
-  caseStudy: string;
-  liveDemo: string;
-  logo:string;
-  git: { icon: IconType; url: string };  // Define git as an object with icon and url
-  languages: { icon: IconType; name: string }[];  // Define languages as an array of objects with icon and name
-  index: number;
+    index: number;
+    title: string;
+    image: string | { type: string; src: string };
+    about: string;
+    caseStudy: string;
+    liveDemo: string;
+    logo: string;
+    git: { icon: IconType; url: string };
+    languages: { icon: IconType; name: string }[];
 }
 
 // Define the projects array with the correct structure
@@ -45,7 +46,7 @@ export const projects: Projects[] = [
     index: 1,
     title: 'Bethel Teens Club',
     about: `
-    Bethel Teens Club: A vibrant online community for Christian teenagers. I designed and developed a welcoming website for this dynamic club, providing a safe space for members to connect, grow, and inspire each other. With a user-friendly interface and engaging features, this site fosters a sense of belonging and spiritual growth among its young users. The website's features include a discussion forum, event calendar, and resource library, all carefully crafted to support the club's mission and promote a sense of community and connection among its members. By creating this online hub, I aimed to empower the next generation of leaders to deepen their faith, build meaningful relationships, and shine their light for Christ.
+    Bethel Teens Club: A vibrant online community for Christian teenagers. I developed a welcoming website for this dynamic club, providing a safe space for members to connect, grow, and inspire each other. With a user-friendly interface and engaging features, this site fosters a sense of belonging and spiritual growth among its young users. The website's features include a images from our gallery, a brief write up about each teen, and a few quotes to sinpire any visitor, all carefully crafted to support the club's mission and promote a sense of community and connection among its members. By creating this online hub, I aimed to empower the next generation of leaders to deepen their faith, build meaningful relationships, and shine their light for Christ.
     `,
     logo:betheLogo,
     caseStudy: 'hello world to all the planets',
@@ -126,7 +127,7 @@ export const projects: Projects[] = [
     about:`
     LearnHub is a comprehensive educational website offering courses and resources in frontend, backend, data science, machine learning, and more. The platform provides a user-friendly interface and robust infrastructure, supporting a supportive community of learners.
 
-    Developed by a dedicated team, led by me as Project Manager and Team Lead, LearnHub secured first position in a prestigious competition, demonstrating the team's commitment to high-quality educational resources. The platform empowers individuals to excel in coding, fostering a community that learns, grows, and succeeds together.
+    Developed by a dedicated team, led by me as Project Manager and Team Lead, LearnHub secured first position in a prestigious pitch friday competition, demonstrating the team's commitment to high-quality educational resources. The platform empowers individuals to excel in coding, fostering a community that learns, grows, and succeeds together.
     
     LearnHub continues to inspire and educate, shaping the next generation of coding professionals.
       `,
@@ -145,6 +146,27 @@ export const projects: Projects[] = [
 
     ]
   },
+  {
+    index: 5,
+    title: `Top's Planets`,
+    about:`
+    Top's Planets takes you on a 3D voyage through our solar system, crafted with React and Three.js. This interactive web app lets you explore planets, moons, and celestial wonders in a visually captivating environment. I utilized React to manage the interface and user interactions, while Three.js powered the stunning 3D graphics and animations.  This project highlights my expertise in building interactive React applications, creating immersive 3D visualizations, and translating scientific data into an engaging and educational experience.
+    `,
+    logo: learnHUbLogo,
+    caseStudy: 'hello world to all the planets',
+    image: {
+      type: 'iframe',
+      src: 'https://www.youtube.com/embed/qp0AZmb1vDA?si=7b1b1vLxT9rO_KMz'
+    },
+    git: { icon: FaGithub, url: 'https://github.com/tosxin-456/Learn-Hub_E-Learning' },  // 
+    liveDemo: 'https://genuine-longma-828e44.netlify.app/',
+    languages: [
+      { icon: IoLogoJavascript, name: 'Javascript' },
+      { icon: TbBrandThreejs, name: 'Three.js' },
+      { icon: FaReact, name: 'React' },
+    ]
+  }
+  
 ];
 
 
