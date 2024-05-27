@@ -8,6 +8,7 @@ import learnhub from '../assets/project images/learnHub.png';
 import medlinkLogo from '../assets/project images/medlinkLogo.svg';
 import topLogo from '../assets/project images/Earth_Globe_Planet_-_Free_photo_on_Pixabay-removebg-preview.png';
 import learnHUbLogo from '../assets/project images/LEARN-HUB.svg';
+import amica from '../assets/project images/amica.png';
 
 
 import { FaGithub  } from "react-icons/fa";
@@ -166,7 +167,28 @@ export const projects: Projects[] = [
       { icon: TbBrandThreejs, name: 'Three.js' },
       { icon: FaReact, name: 'React' },
     ]
-  }
+  },
+  {
+    index: 5,
+    title: 'Amica',
+    about:`
+    As Team Lead and Backend Developer, I led the development of Amica, a web application for tracking financial transactions and collaborating with others. Amica features a user-friendly interface, joint account management, and real-time updates, all built on a secure and scalable backend infrastructure. I oversaw the project from start to finish, ensuring a smooth development process and effective teamwork. Amica showcases my expertise in leading teams, designing scalable architectures, and developing user-centric applications, and I'm proud to feature it in my portfolio.
+      `,
+    logo:'https://amica01.netlify.app/images/logo.svg',  
+    caseStudy: 'hello world to all the planets',
+    image: amica,
+    git: { icon: FaGithub, url: 'https://github.com/tosxin-456/Amica' },  // 
+    liveDemo: 'https://amica01.netlify.app/signin.html',
+    languages: [  // Define languages with icons and names
+    { icon: FaHtml5, name: 'Html' },
+    { icon: FaCss3Alt, name: 'Css' },
+    { icon: IoLogoJavascript, name: 'Javascript' },
+    { icon: SiExpress, name: 'Express.js' },
+    { icon: SiMongodb, name: 'MongoDb' },
+    { icon: FaNode, name: 'Node.js' },
+
+    ]
+  },
   
 ];
 
