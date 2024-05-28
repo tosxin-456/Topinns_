@@ -31,7 +31,7 @@ function Footer({isLightMode}: FooterProps) {
    width={'100%'}
      textAlign={'center'}
    >
-    © 2024 Ekundayo Shallom. All rights reserved.
+    Created by <span  className={`${isLightMode ?'text-[#141613] ' :'bg-[#141613] text-[#6A98F0]'}`}> Ekundayo Shallom</span> All rights reserved © 2024
     </Text>
   </HStack>
   )

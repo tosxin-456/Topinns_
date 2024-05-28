@@ -208,6 +208,25 @@ export const projects: Projects[] = [
 
     ]
   },
+  {
+    index: 8,
+    title: 'Hate Speech Detector',
+    about:`
+  
+     As a developer, I'm currently working on a Python project that utilizes machine learning to detect hate speech in text data. Using Jupyter Notebook, I've made significant progress in developing a model that can identify hateful language with promising accuracy. Although the project is still in progress, I'm excited about the potential impact it could have in promoting online safety and inclusivity. So far, I've implemented natural language processing techniques and trained the model on a dataset of labeled text examples. While there's still more work to be done to refine the model's performance and address edge cases, I'm proud of the progress I've made and look forward to continuing to develop this important project.
+      `,
+    logo:' ',  
+    caseStudy: 'hello world to all the planets',
+    image: hateSpeech,
+    git: { icon: FaGithub, url: 'https://github.com/tosxin-456/hate_speech' },  // 
+    liveDemo: 'https://github.com/tosxin-456/hate_speech',
+    languages: [  // Define languages with icons and names
+    { icon: FaPython, name: 'Python' },
+    { icon: SiJupyter, name: 'Jupyter' },
+
+    ]
+  },
+  
 ];
 
 
