@@ -6,6 +6,9 @@ import Navbar from './components/navbar';
 import Home from './pages/home';
 import About from './pages/about';
 import Projects from './pages/projects';
+import Flower from './components/Flower';
+
+
 
 type SectionRefs = {
   home: HTMLElement | null;
@@ -103,6 +106,7 @@ const App: React.FC = () => {
         <div id="projects" ref={el => sectionRefs.current.about = el}>
            <Projects isLightMode={isLightMode}/>
         </div>
+         <Flower/>
         <Footer isLightMode={isLightMode} />
       </div>
     </>
