@@ -16,7 +16,9 @@ function Skillset({isLightMode}:SkillsProps) {
   return (
     <VStack>
         <Text className='text-3xl m-[50px]'>My SkillSet</Text>
-      <Flex>
+      <Flex
+      className=' w-[90%] '
+      >
         <Box
         width={'44%'}
         marginRight={'auto'}
