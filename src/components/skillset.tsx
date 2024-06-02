@@ -20,9 +20,9 @@ function Skillset({isLightMode}:SkillsProps) {
       className=' w-[90%] '
       >
         <Box
-        width={'44%'}
+        width={'47%'}
         marginRight={'auto'}
-        marginLeft={'10px'}
+        // marginLeft={'10px'}
         marginTop={'25px'}
         // height={'230px'}
         // className='shadow-lg p-[10px] rounded-lg'
@@ -34,7 +34,7 @@ function Skillset({isLightMode}:SkillsProps) {
         display={'flex'}
         >
         <SiNestjs className='w-[40px] h-[30px]  mr-auto' />
-        <Text width={'fit-content'} className='text-[18px] ml-2 text-start flex'>
+        <Text width={'fit-content'} className='text-[16px] ml-2 text-start flex'>
            Back-end Development Expertise
         </Text>
         </Box>    
@@ -43,7 +43,7 @@ function Skillset({isLightMode}:SkillsProps) {
         </Text>
         </Box>
         <Box
-        width={'44%'}
+        width={'47%'}
         marginLeft={'auto'}
         marginRight={'10px'}
         marginTop={'25px'}
@@ -59,7 +59,7 @@ function Skillset({isLightMode}:SkillsProps) {
             height={'fit-content'}
             >
           <FaReact className='w-[40px] h-[30px] mr-auto' />
-        <Text  className='text-[18px] text-start ml-2 '>
+        <Text  className='text-[16px] text-start ml-2 '>
         Front-end Development Expertise
         </Text>
             </Box>
