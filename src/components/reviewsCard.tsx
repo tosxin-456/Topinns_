@@ -21,7 +21,7 @@ const Reviews = ({ data }: ReviewProps) => {
       <CardHeader>
         <Flex>
           <Flex flex="1" gap="7" alignItems="center" flexWrap="wrap">
-            <Avatar name={data.name} src={data.img} className="w-[50px]" borderRadius={'50%'} />
+            <Avatar name={data.name} src={data.img} className="w-[50px] h-[50px]" borderRadius={'50%'} />
             <Box>
               <Heading size="sm">{data.name}</Heading>
               <Text as="sup">{data.title}</Text>

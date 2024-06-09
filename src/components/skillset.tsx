@@ -93,4 +93,5 @@ function Skillset({isLightMode}:SkillsProps) {
   )
 }
 
+
 export default Skillset
