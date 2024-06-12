@@ -30,12 +30,12 @@ const Reviews = ({ data }: ReviewProps) => {
         </Flex>
       </CardHeader>
       <CardBody>
-        <Text fontFamily='"Poppins", "sans-serif"' mt={'15px'} fontSize="14px" >
+        <Text className=" h-[250px]" fontFamily='"Poppins", "sans-serif"' mt={'15px'} fontSize="14px" >
           {data.msg}
         </Text>
       </CardBody>
       <CardFooter>
-        <Box display="flex" alignItems="center" gap={1}>
+        <Box display="flex " alignItems="center"  gap={1}>
           <StarIcon fontSize="lg" color="orange" />
           <Text className="font-semibold text-sm ">{data.rate}</Text>
         </Box>
