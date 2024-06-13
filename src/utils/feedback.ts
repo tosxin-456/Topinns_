@@ -46,7 +46,7 @@ export const feedback: Feedback[] = [
     title: 'Frontend Developer',
     rate: 4.6,
     img: tjay,
-    msg: "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere dolor tempore natus, quibusdam commodi sit quidem voluptas quaerat, animi velit vel? Illum animi inventore asperiores laboriosam velit aperiam molestiae qui necessitatibus architecto, debitis aliquid!"
+    msg: "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere dolor tempore natus, quibusdam commodi sit quidem voluptas quaerat, animi velit vel? Illum animi inventore asperiores laboriosam velit aperiam molestiae qui necessitatibus architecto, debitis aliquid form!"
   },
   {
     index:5,
