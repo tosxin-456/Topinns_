@@ -1,7 +1,4 @@
 import  { useState, useEffect } from 'react'
-// import { IoCloseSharp, IoSunny, IoMoon } from "react-icons/io5";
-// import { IoMdHome } from "react-icons/io";
-// import { FaPerson } from "react-icons/fa6";
 import { Flex, useDisclosure } from "@chakra-ui/react";
 import { Box,
      HStack,
@@ -12,7 +9,6 @@ import { Box,
 
  } from '@chakra-ui/react';
  import { SunIcon, MoonIcon, CloseIcon, HamburgerIcon  } from '@chakra-ui/icons';
-//  import { FaCheck } from "react-icons/fa6";
 
  interface FooterProps {
   isLightMode: boolean; 

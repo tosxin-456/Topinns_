@@ -2,7 +2,7 @@ import Kelechi from '../assets/profile images/profile2.jpg';
 import Israel from '../assets/profile images/Israel.png';
 import lesh from '../assets/profile images/leshaodo.jpeg';
 import tjay from '../assets/profile images/tjay.jpeg';
-
+import prophKay from '../assets/profile images/proph kay.jpeg'
 
 
 interface Feedback {
@@ -37,8 +37,8 @@ export const feedback: Feedback[] = [
     name: 'Promise Muoneke ',
     title: 'Creative Strategist, SentientXT',
     rate: 4.1,
-    img: Kelechi,
-    msg: "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere dolor tempore natus, quibusdam commodi sit quidem voluptas quaerat, animi velit vel? Illum animi inventore asperiores laboriosam velit aperiam molestiae qui necessitatibus architecto, debitis aliquid!"
+    img: prophKay,
+    msg: "  Topinns has shown to have an eye for details that not very many possess, and I believe this is a key advantage that places him above the average. This eye for detail translates across various facets of his work in terms of due diligence, prompt delivery and actually caring about the client and what their work stands for. Never regretted getting him to do a job for us. And I don't think you will either."
   },
   {
     index:4,
