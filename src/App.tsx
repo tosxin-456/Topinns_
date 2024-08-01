@@ -6,6 +6,7 @@ import Navbar from './components/navbar';
 import Home from './pages/home';
 import About from './pages/about';
 import Projects from './pages/projects';
+import Games from './pages/games';
 
 
 
@@ -96,14 +97,17 @@ const App: React.FC = () => {
     <>
       <div>
         <Navbar isLightMode={isLightMode} toggleColorMode={toggleColorMode} />
-        <div id="home" ref={el => sectionRefs.current.home = el}>
+        <div id="home" ref={(el) => (sectionRefs.current.home = el)}>
           <Home isLightMode={isLightMode} />
         </div>
-        <div id="about" ref={el => sectionRefs.current.about = el}>
+        <div id="about" ref={(el) => (sectionRefs.current.about = el)}>
           <About isLightMode={isLightMode} />
         </div>
-        <div id="projects" ref={el => sectionRefs.current.about = el}>
-           <Projects isLightMode={isLightMode}/>
+        <div id="projects" ref={(el) => (sectionRefs.current.about = el)}>
+          <Projects isLightMode={isLightMode} />
+        </div>
+        <div id="games" ref={(el) => (sectionRefs.current.about = el)}>
+          <Games isLightMode={isLightMode} />
         </div>
         <Footer isLightMode={isLightMode} />
       </div>
