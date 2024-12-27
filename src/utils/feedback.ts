@@ -16,19 +16,19 @@ interface Feedback {
 export const feedback: Feedback[] = [
   {
     index: 1,
-    name: "Bashir Sheidu (Impact Bash)",
-    title: "C O O  at Nhub Nigeria",
-    rate: 4.8,
-    img: "https://res.cloudinary.com/nhubnacademy/image/upload/v1682900757/nHubFoundation/bash_efr3k8.jpg",
-    msg: "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere dolor tempore natus, quibusdam commodi sit quidem voluptas quaerat, animi velit vel? Illum animi inventore asperiores laboriosam velit aperiam molestiae qui necessitatibus architecto, debitis aliquid!"
+    name: "Akintayo Akinnibosun ",
+    title: "Client ",
+    rate: 4.6,
+    img: "",
+    msg: "   Shallom is a talented full stack web developer and team leader with a relentless drive for excellence. Other developers may postpone deadlines, Shallom Ekundayo hastens them. It's been a pleasure having him involved in our project and if we have another that falls under his wheelhouse again, I know who's first on my calling list!"
   },
   {
     index: 2,
-    name: "Israel Agom",
-    title: "CEO at Databoard Technologies",
-    rate: 4.4,
-    img: Israel,
-    msg: "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere dolor tempore natus, quibusdam commodi sit quidem voluptas quaerat, animi velit vel? Illum animi inventore asperiores laboriosam velit aperiam molestiae qui necessitatibus architecto, debitis aliquid!"
+    name: "Victor Salami",
+    title: "Previous GDSC Lead",
+    rate: 4.8,
+    img: "https://avatars.githubusercontent.com/u/38400062?v=4",
+    msg: "  Topinns is an outstanding fullstack web developer and core team member at GDSC. His sharp intellect and problem-solving skills ensure our projects run smoothly. He also excels in organizing GDSC programs. As a colleague, I’ve enjoyed working with him, especially during UI/UX design sessions where his ideation skills shine. Tosin's contributions are invaluable to our success."
   },
   {
     index: 3,
@@ -56,18 +56,18 @@ export const feedback: Feedback[] = [
   },
   {
     index: 6,
-    name: "Victor Salami",
-    title: "Previous GDSC Lead",
-    rate: 4.8,
-    img: "https://avatars.githubusercontent.com/u/38400062?v=4",
-    msg: "  Topinns is an outstanding fullstack web developer and core team member at GDSC. His sharp intellect and problem-solving skills ensure our projects run smoothly. He also excels in organizing GDSC programs. As a colleague, I’ve enjoyed working with him, especially during UI/UX design sessions where his ideation skills shine. Tosin's contributions are invaluable to our success."
-  },
-  {
-    index: 7,
     name: "Tobi",
     title: "Backend Developer",
     rate: 4.0,
     img: "https://avatars.githubusercontent.com/u/41240727?v=4",
+    msg: "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere dolor tempore natus, quibusdam commodi sit quidem voluptas quaerat, animi velit vel? Illum animi inventore asperiores laboriosam velit aperiam molestiae qui necessitatibus architecto, debitis aliquid!"
+  },
+  {
+    index: 7,
+    name: "Israel Agom",
+    title: "CEO at Databoard Technologies",
+    rate: 4.4,
+    img: Israel,
     msg: "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere dolor tempore natus, quibusdam commodi sit quidem voluptas quaerat, animi velit vel? Illum animi inventore asperiores laboriosam velit aperiam molestiae qui necessitatibus architecto, debitis aliquid!"
   },
   {
@@ -80,14 +80,6 @@ export const feedback: Feedback[] = [
   },
   {
     index: 9,
-    name: "Emma Collins",
-    title: "CEO Diamond Dreams events ",
-    rate: 4.6,
-    img: Kelechi,
-    msg: "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere dolor tempore natus, quibusdam commodi sit quidem voluptas quaerat, animi velit vel? Illum animi inventore asperiores laboriosam velit aperiam molestiae qui necessitatibus architecto, debitis aliquid!"
-  },
-  {
-    index: 10,
     name: "Francis Ocholi",
     title: " C O O Paycrest",
     rate: 4.6,
@@ -95,11 +87,19 @@ export const feedback: Feedback[] = [
     msg: "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere dolor tempore natus, quibusdam commodi sit quidem voluptas quaerat, animi velit vel? Illum animi inventore asperiores laboriosam velit aperiam molestiae qui necessitatibus architecto, debitis aliquid!"
   },
   {
-    index: 11,
+    index: 10,
     name: "Precious Kefas",
     title: "Frontend Developer",
     rate: 4.6,
     img: Kelechi,
+    msg: "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere dolor tempore natus, quibusdam commodi sit quidem voluptas quaerat, animi velit vel? Illum animi inventore asperiores laboriosam velit aperiam molestiae qui necessitatibus architecto, deb,itis aliquid!"
+  },
+  {
+    index: 2,
+    name: "Bashir Sheidu (Impact Bash)",
+    title: "C O O  at Nhub Nigeria",
+    rate: 4.8,
+    img: "https://res.cloudinary.com/nhubnacademy/image/upload/v1682900757/nHubFoundation/bash_efr3k8.jpg",
     msg: "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere dolor tempore natus, quibusdam commodi sit quidem voluptas quaerat, animi velit vel? Illum animi inventore asperiores laboriosam velit aperiam molestiae qui necessitatibus architecto, debitis aliquid!"
-  }
+  },
 ];
