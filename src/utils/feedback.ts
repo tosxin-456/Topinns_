@@ -24,11 +24,11 @@ export const feedback: Feedback[] = [
   },
   {
     index: 2,
-    name: "Victor Salami",
-    title: "Previous GDSC Lead",
-    rate: 4.8,
-    img: "https://avatars.githubusercontent.com/u/38400062?v=4",
-    msg: "  Topinns is an outstanding fullstack web developer and core team member at GDSC. His sharp intellect and problem-solving skills ensure our projects run smoothly. He also excels in organizing GDSC programs. As a colleague, I’ve enjoyed working with him, especially during UI/UX design sessions where his ideation skills shine. Tosin's contributions are invaluable to our success."
+    name: "Leshaodo Olatayo",
+    title: "Ui/UX / Product Designer",
+    rate: 4.7,
+    img: lesh,
+    msg: "  Shallom  is an exceptional fullstack developer and outstanding project manager, seamlessly handling complex projects with ease. His expertise extends to UI/UX design, where he has been instrumental in ideation and creative problem-solving, greatly enhancing our team's workflow and project outcomes. A true asset in any tech-driven environment."
   },
   {
     index: 3,
@@ -48,11 +48,11 @@ export const feedback: Feedback[] = [
   },
   {
     index: 5,
-    name: "Leshaodo Olatayo",
-    title: "Ui/UX / Product Designer",
-    rate: 4.7,
-    img: lesh,
-    msg: "  Shallom  is an exceptional fullstack developer and outstanding project manager, seamlessly handling complex projects with ease. His expertise extends to UI/UX design, where he has been instrumental in ideation and creative problem-solving, greatly enhancing our team's workflow and project outcomes. A true asset in any tech-driven environment."
+    name: "Victor Salami",
+    title: "Previous GDSC Lead",
+    rate: 4.8,
+    img: "https://avatars.githubusercontent.com/u/38400062?v=4",
+    msg: "  Topinns is an outstanding fullstack web developer and core team member at GDSC. His sharp intellect and problem-solving skills ensure our projects run smoothly. He also excels in organizing GDSC programs. As a colleague, I’ve enjoyed working with him, especially during UI/UX design sessions where his ideation skills shine. Tosin's contributions are invaluable to our success."
   },
   {
     index: 6,
@@ -101,5 +101,5 @@ export const feedback: Feedback[] = [
     rate: 4.8,
     img: "https://res.cloudinary.com/nhubnacademy/image/upload/v1682900757/nHubFoundation/bash_efr3k8.jpg",
     msg: "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere dolor tempore natus, quibusdam commodi sit quidem voluptas quaerat, animi velit vel? Illum animi inventore asperiores laboriosam velit aperiam molestiae qui necessitatibus architecto, debitis aliquid!"
-  },
+  }
 ];
