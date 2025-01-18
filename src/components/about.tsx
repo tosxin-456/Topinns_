@@ -1,5 +1,3 @@
-// import React from 'react'
-
 import {Text, Box , Image } from '@chakra-ui/react'
 import profile from '../assets/profile images/profile1.jpg'
 
