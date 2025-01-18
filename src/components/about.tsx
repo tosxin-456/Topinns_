@@ -3,8 +3,6 @@
 import {Text, Box , Image } from '@chakra-ui/react'
 import profile from '../assets/profile images/profile1.jpg'
 
-
-
 function AboutHeader() {
   return (
     <Box className=' w-[90%] m-auto lg:w-[80%] '>
