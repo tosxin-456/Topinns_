@@ -14,7 +14,7 @@ import {
   Heart
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { blogPosts } from "../../utils/blogs";
+import { blogPosts, BlogPost } from "../../utils/blogs";
 
 interface BlogPageProps {
   isLightMode?: boolean;
@@ -44,10 +44,10 @@ const BlogPage: React.FC<BlogPageProps> = ({ isLightMode }) => {
 
   const categories = ["All", "Philosophy", "Reflection", "Technology", "Craft"];
 
-  const filteredPosts =
-    selectedCategory === "All"
-      ? blogPosts
-      : blogPosts.filter(post => post.category === selectedCategory);
+const filteredPosts: BlogPost[] =
+  selectedCategory === "All"
+    ? blogPosts
+    : blogPosts.filter(post => post.category === selectedCategory);
 
   const ViewModeButton = ({
     mode,
@@ -73,18 +73,17 @@ const BlogPage: React.FC<BlogPageProps> = ({ isLightMode }) => {
       <Icon className="w-5 h-5" />
     </button>;
 
-  const renderListView = () =>
-    <div className="space-y-6">
+  const renderListView = () => <div className="space-y-6">
       {filteredPosts.map(post =>
         <article
           key={post.id}
           onClick={() => navigate(`/blog/${post.id}`)}
-          onMouseEnter={() => setHoveredCard(post.id)}
+          onMouseEnter={() => setHoveredCard(post.id.toString())}
           onMouseLeave={() => setHoveredCard(null)}
           className={`group p-8 rounded-2xl shadow-lg transition-all duration-300 cursor-pointer border ${isLightMode
             ? "bg-white/80 backdrop-blur-sm border-white/20 hover:shadow-2xl hover:bg-white/90"
             : "bg-slate-800/80 backdrop-blur-sm border-slate-700/50 hover:shadow-2xl hover:bg-slate-800/90"} ${hoveredCard ===
-          post.id
+          post.id.toString()
             ? "transform scale-[1.02]"
             : ""}`}
         >
@@ -140,7 +139,7 @@ const BlogPage: React.FC<BlogPageProps> = ({ isLightMode }) => {
 
             <ChevronRight
               className={`w-6 h-6 ml-4 flex-shrink-0 transition-transform duration-200 ${hoveredCard ===
-              post.id
+              post.id.toString()
                 ? "transform translate-x-1"
                 : ""} ${isLightMode ? "text-gray-400" : "text-gray-500"}`}
             />
@@ -191,18 +190,17 @@ const BlogPage: React.FC<BlogPageProps> = ({ isLightMode }) => {
       )}
     </div>;
 
-  const renderGridView = () =>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  const renderGridView = () => <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {filteredPosts.map(post =>
         <article
           key={post.id}
           onClick={() => navigate(`/blog/${post.id}`)}
-          onMouseEnter={() => setHoveredCard(post.id)}
+          onMouseEnter={() => setHoveredCard(post.id.toString())}
           onMouseLeave={() => setHoveredCard(null)}
           className={`group p-6 rounded-2xl shadow-lg transition-all duration-300 cursor-pointer border h-full flex flex-col ${isLightMode
             ? "bg-white/80 backdrop-blur-sm border-white/20 hover:shadow-2xl hover:bg-white/90"
             : "bg-slate-800/80 backdrop-blur-sm border-slate-700/50 hover:shadow-2xl hover:bg-slate-800/90"} ${hoveredCard ===
-          post.id
+          post.id.toString()
             ? "transform scale-105"
             : ""}`}
         >
@@ -269,18 +267,17 @@ const BlogPage: React.FC<BlogPageProps> = ({ isLightMode }) => {
       )}
     </div>;
 
-  const renderCompactView = () =>
-    <div className="space-y-4">
+  const renderCompactView = () => <div className="space-y-4">
       {filteredPosts.map(post =>
         <article
           key={post.id}
           onClick={() => navigate(`/blog/${post.id}`)}
-          onMouseEnter={() => setHoveredCard(post.id)}
+          onMouseEnter={() => setHoveredCard(post.id.toString())}
           onMouseLeave={() => setHoveredCard(null)}
           className={`group p-6 rounded-xl shadow-md transition-all duration-200 cursor-pointer border ${isLightMode
             ? "bg-white/70 backdrop-blur-sm border-white/20 hover:shadow-lg hover:bg-white/80"
             : "bg-slate-800/70 backdrop-blur-sm border-slate-700/50 hover:shadow-lg hover:bg-slate-800/80"} ${hoveredCard ===
-          post.id
+          post.id.toString()
             ? "transform translateX-2"
             : ""}`}
         >
@@ -328,7 +325,7 @@ const BlogPage: React.FC<BlogPageProps> = ({ isLightMode }) => {
 
             <ChevronRight
               className={`w-5 h-5 ml-4 flex-shrink-0 transition-transform duration-200 ${hoveredCard ===
-              post.id
+              post.id.toString()
                 ? "transform translate-x-1"
                 : ""} ${isLightMode ? "text-gray-400" : "text-gray-500"}`}
             />
