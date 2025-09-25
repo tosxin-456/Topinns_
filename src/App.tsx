@@ -1,7 +1,7 @@
 // App.tsx
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
-import { Routes, Route } from 'react-router-dom'; // <-- added
+import { Routes, Route } from 'react-router-dom';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
 import Home from './pages/home';
@@ -88,33 +88,37 @@ const App: React.FC = () => {
   };
 
   return (
-    <Routes>
-      {/* Main scrolling sections route */}
-      <Route
-        path="/"
-        element={
-          <>
-            <Navbar isLightMode={isLightMode} toggleColorMode={toggleColorMode} />
-            <div id="home" ref={(el) => (sectionRefs.current.home = el)}>
-              <Home isLightMode={isLightMode} />
-            </div>
-            <div id="about" ref={(el) => (sectionRefs.current.about = el)}>
-              <About isLightMode={isLightMode} />
-            </div>
-            <div id="projects" ref={(el) => (sectionRefs.current.projects = el)}>
-              <Projects isLightMode={isLightMode} />
-            </div>
-            <div id="games" ref={(el) => (sectionRefs.current.games = el)}>
-              <Games isLightMode={isLightMode} />
-            </div>
-            <Footer isLightMode={isLightMode} />
-          </>
-        }
-      />
+    <>
+      {/* Navbar always visible */}
+      <Navbar isLightMode={isLightMode} toggleColorMode={toggleColorMode} />
 
-      {/* Blog route */}
-      <Route path="/blog" element={<BlogPage />} />
-    </Routes>
+      <Routes>
+        {/* Main scrolling sections route */}
+        <Route
+          path="/"
+          element={
+            <>
+              <div id="home" ref={(el) => (sectionRefs.current.home = el)}>
+                <Home isLightMode={isLightMode} />
+              </div>
+              <div id="about" ref={(el) => (sectionRefs.current.about = el)}>
+                <About isLightMode={isLightMode} />
+              </div>
+              <div id="projects" ref={(el) => (sectionRefs.current.projects = el)}>
+                <Projects isLightMode={isLightMode} />
+              </div>
+              <div id="games" ref={(el) => (sectionRefs.current.games = el)}>
+                <Games isLightMode={isLightMode} />
+              </div>
+              <Footer isLightMode={isLightMode} />
+            </>
+          }
+        />
+
+        {/* Blog route */}
+        <Route path="/blog" element={<BlogPage isLightMode={isLightMode} />} />
+      </Routes>
+    </>
   );
 };
 

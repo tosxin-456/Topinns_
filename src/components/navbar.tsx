@@ -30,6 +30,20 @@ function Navbar({ isLightMode, toggleColorMode }: FooterProps) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const navigateToSection = (sectionId: string) => {
+  if (window.location.pathname !== "/") {
+    // go to home first
+    navigate("/", { replace: false });
+    // wait for navigation before scrolling
+    setTimeout(() => {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  } else {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+
   return (
     <Flex>
       <Box
@@ -70,13 +84,10 @@ function Navbar({ isLightMode, toggleColorMode }: FooterProps) {
             >
               <Text
                 fontFamily="'Clash Display', sans-serif"
-                _hover={{
-                  textDecoration: "underline",
-                  cursor: "pointer",
-                  color: "#6A98F0"
-                }}
-                as="a"
-                href="#home"
+  onClick={() => navigateToSection("home")}
+  cursor="pointer"
+  _hover={{ textDecoration: "underline", color: "#6A98F0" }}
+
               >
                 home
               </Text>
@@ -88,8 +99,7 @@ function Navbar({ isLightMode, toggleColorMode }: FooterProps) {
                   color: "#6A98F0"
                 }}
                 textAlign={"center"}
-                as="a"
-                href="#about"
+      onClick={() => navigateToSection("about")}
               >
                 about me
               </Text>
@@ -100,8 +110,8 @@ function Navbar({ isLightMode, toggleColorMode }: FooterProps) {
                   cursor: "pointer",
                   color: "#6A98F0"
                 }}
-                as="a"
-                href="#projects"
+      onClick={() => navigateToSection("projects")}
+
               >
                 projects
               </Text>
@@ -139,43 +149,49 @@ function Navbar({ isLightMode, toggleColorMode }: FooterProps) {
               <Box p={4}>
                 <Button
                   onClick={toggleColorMode}
-                  backgroundColor={`${isLightMode ? "#C7D0FF" : "#303030"}`}
-                  width={"100px"}
-                  height={"30px"}
-                  fontSize={"11px"}
-                  textAlign={"start"}
-                  borderRadius={"5px"}
-                  justifyContent={"start"}
-                  marginRight={"15px"}
+                  backgroundColor={isLightMode ? "#C7D0FF" : "#303030"}
+                  width="120px"
+                  height="30px"
+                  fontSize="12px"
+                  borderRadius="8px"
+                  p="2px"
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="space-between"
+                  fontFamily="'Clash Display', sans-serif"
                 >
-                  {isLightMode
-                    ? <Text
-                        textAlign={"center"}
-                        backgroundColor={"blue"}
-                        color={"white"}
-                        width={"40%"}
-                        marginLeft={"3px"}
-                        borderRadius={"5px"}
-                        bg="linear-gradient(134deg, #6A98F0 0%, #4961DC 99%)"
-                        p={"2px"}
-                        fontFamily="'Clash Display', sans-serif"
-                      >
-                        Dark
-                      </Text>
-                    : <Text
-                        textAlign={"center"}
-                        backgroundColor={"blue"}
-                        color={"white"}
-                        width={"40%"}
-                        marginRight={"5px"}
-                        marginLeft={"auto"}
-                        borderRadius={"5px"}
-                        bg="linear-gradient(134deg, #6A98F0 0%, #4961DC 99%)"
-                        p={"2px"}
-                        fontFamily="'Clash Display', sans-serif"
-                      >
-                        Light
-                      </Text>}
+                  <Flex
+                    flex="1"
+                    h="100%"
+                    align="center"
+                    justify="center"
+                    borderRadius="6px"
+                    bg={
+                      isLightMode
+                        ? "linear-gradient(134deg, #6A98F0 0%, #4961DC 99%)"
+                        : "transparent"
+                    }
+                    color={isLightMode ? "white" : "gray.300"}
+                    fontWeight="500"
+                  >
+                    Dark
+                  </Flex>
+                  <Flex
+                    flex="1"
+                    h="100%"
+                    align="center"
+                    justify="center"
+                    borderRadius="6px"
+                    bg={
+                      !isLightMode
+                        ? "linear-gradient(134deg, #6A98F0 0%, #4961DC 99%)"
+                        : "transparent"
+                    }
+                    color={!isLightMode ? "white" : "gray.700"}
+                    fontWeight="500"
+                  >
+                    Light
+                  </Flex>
                 </Button>
               </Box>
             </HStack>
@@ -183,8 +199,9 @@ function Navbar({ isLightMode, toggleColorMode }: FooterProps) {
               <Box width={"50px"} m={"auto"}>
                 <IconButton
                   aria-label="Open Menu"
-                  colorScheme="transparent"
+                  variant="ghost"
                   size="lg"
+                  color={isLightMode ? "black" : "white"}
                   icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
                   onClick={onToggle}
                 />
@@ -194,7 +211,7 @@ function Navbar({ isLightMode, toggleColorMode }: FooterProps) {
       <Box>
         {isOpen &&
           <VStack
-            textAlign={"center"} //  spacing={4} // backgroundColor={'white'}
+            textAlign={"center"}
             color="#000"
             position="fixed"
             mt="2em"
@@ -202,7 +219,9 @@ function Navbar({ isLightMode, toggleColorMode }: FooterProps) {
             top="36px"
             right="0"
             width="100%"
-            zIndex={99}
+            zIndex={
+              99 //  spacing={4} // backgroundColor={'white'}
+            }
             className={`${isLightMode
               ? "bg-white color-black shadow-md "
               : "bg-[#141613] text-white "}`}
@@ -262,7 +281,8 @@ function Navbar({ isLightMode, toggleColorMode }: FooterProps) {
                 ? "bg-white color-black  "
                 : "bg-[#141613] text-white "}`}
               as="a"
-              href="#home"
+               onClick={() => navigateToSection("home")}
+
             >
               home
               {/* <FaCheck/> */}
@@ -278,8 +298,8 @@ function Navbar({ isLightMode, toggleColorMode }: FooterProps) {
                 color: "#6A98F0"
               }}
               textAlign={"center"}
-              as="a"
-              href="#about"
+                onClick={() => navigateToSection("about")}
+
             >
               about me
             </Text>
@@ -293,8 +313,8 @@ function Navbar({ isLightMode, toggleColorMode }: FooterProps) {
                 cursor: "pointer",
                 color: "#6A98F0"
               }}
-              as="a"
-              href="#projects"
+      onClick={() => navigateToSection("projects")}
+
             >
               projects
             </Text>
