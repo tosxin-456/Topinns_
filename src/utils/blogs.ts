@@ -199,48 +199,48 @@ export const blogPosts: BlogPost[] = [
     image:
       "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1200&q=80",
     content: `
-What truly is love?  
-Is love letting go, or is it fighting?  
-Is it sometimes fighting and other times letting go?  
-Is it about understanding that someone deserves better, and then "ghosting" them?  
-Or is it about the time spent together, or the promise of "till death do us part"?  
+    What truly is love?  
+    Is love letting go, or is it fighting?  
+    Is it sometimes fighting and other times letting go?  
+    Is it about understanding that someone deserves better, and then "ghosting" them?  
+    Or is it about the time spent together, or the promise of "till death do us part"?  
 
-Is love about being there for someone no matter what, or is it about knowing this person is wrong, and still standing by them?  
-Is it about knowing someone is wrong, and because you can't stand the decision, you leave?  
-Does love ever truly “finish,” or does it continue for eternity?  
-Can love pretend for a very, very long time?  
-Do I even understand what love really is?  
+    Is love about being there for someone no matter what, or is it about knowing this person is wrong, and still standing by them?  
+    Is it about knowing someone is wrong, and because you can't stand the decision, you leave?  
+    Does love ever truly “finish,” or does it continue for eternity?  
+    Can love pretend for a very, very long time?  
+    Do I even understand what love really is?  
 
-For the last seven years of my life, I have struggled with this thought process.  
-In the end, how do you really know something is love?  
-Not by the time, not the “feelings,” not even how much of friends we are.  
-Is it by how much you cry when the person leaves?  
+    For the last seven years of my life, I have struggled with this thought process.  
+    In the end, how do you really know something is love?  
+    Not by the time, not the “feelings,” not even how much of friends we are.  
+    Is it by how much you cry when the person leaves?  
 
-To be honest, I don’t think I will ever fully understand the feeling.  
-I am just a man, and I am not even very good at being a man yet.  
-I believe understanding quantum mechanics is easier than understanding the concept of human love.  
+    To be honest, I don’t think I will ever fully understand the feeling.  
+    I am just a man, and I am not even very good at being a man yet.  
+    I believe understanding quantum mechanics is easier than understanding the concept of human love.  
 
-In the end, love is many things.  
-Love is what carries people to fight wars.  
-Love is what makes people poison others.  
-Love is what makes people deceive each other.  
-Love is sometimes translated as hatred.  
+    In the end, love is many things.  
+    Love is what carries people to fight wars.  
+    Love is what makes people poison others.  
+    Love is what makes people deceive each other.  
+    Love is sometimes translated as hatred.  
 
-Freud saw love through a different lens — he coined the word *ambivalence*,  
-trying to explain how we all have both love and hate towards the same person.  
-So, in the end, hate (I am paraphrasing) is just the absence of love.  
-In some sense, every single human emotion stems from the presence or absence of love.  
+    Freud saw love through a different lens — he coined the word *ambivalence*,  
+    trying to explain how we all have both love and hate towards the same person.  
+    So, in the end, hate (I am paraphrasing) is just the absence of love.  
+    In some sense, every single human emotion stems from the presence or absence of love.  
 
-I don’t want to go into Friedrich (I think everyone knows how much I like him) — the “diagnostician of nihilism.”  
-Though he never defined both as the same thing, in some contexts his writings (at least the ones I have read) point in that perspective.  
+    I don’t want to go into Friedrich (I think everyone knows how much I like him) — the “diagnostician of nihilism.”  
+    Though he never defined both as the same thing, in some contexts his writings (at least the ones I have read) point in that perspective.  
 
-I have been very terrible at expressing love, but in a subtle way I think writing has been the way I’ve enjoyed expressing it — writing, and also occasionally other things 😂😂.  
-I think love is about giving, giving in some form or another:  
-giving your time, your emotions, your money 😂😂, no matter how little it might be.  
+    I have been very terrible at expressing love, but in a subtle way I think writing has been the way I’ve enjoyed expressing it — writing, and also occasionally other things 😂😂.  
+    I think love is about giving, giving in some form or another:  
+    giving your time, your emotions, your money 😂😂, no matter how little it might be.  
 
-And today, I am expressing my love in a letter.  
-So, this — this is to someone.  
-Or is it?
+    And today, I am expressing my love in a letter.  
+    So, this — this is to someone.  
+   Or is it?
   `
   }
 ];

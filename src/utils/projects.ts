@@ -11,11 +11,19 @@ import learnHUbLogo from "../assets/project images/LEARN-HUB.svg";
 import amica from "../assets/project images/amica.png";
 import hateSpeech from "../assets/project images/hatespeech1.png";
 import toppins_chat from "../assets/project images/Screenshot (96)(2).png";
-import teechaa from "../assets/project images/Screenshot (97)(2).png";
+import teechaa from "../assets/project images/teechaa.png";
 import switch_health from "../assets/project images/WhatsApp Image 2024-12-27 at 17.17.06_400323c8.jpg";
 import craddule from "../assets/project images/Screenshot (100).png";
 import flow from "../assets/project images/Screenshot (98).png";
 import glynn from "../assets/project images/Screenshot (99).png";
+import blssd from "../assets/project images/blssd.png";
+import quizCreation from "../assets/project images/quiz-creation.png";
+import quiz from "../assets/project images/quiz-playing.png";
+import archbirdg from "../assets/project images/archbridgecare.png";
+import aeroplane from "../assets/project images/aeroplane.png";
+import malak from "../assets/project images/malak.png";
+import oasisplus from "../assets/project images/oasisplus.png";
+// import malak from "../assets/project images/Screenshot (99).png";
 
 import { FaGithub } from "react-icons/fa";
 import { SiPrivateinternetaccess } from "react-icons/si";
@@ -280,15 +288,15 @@ Switch Health showcases our combined skills and shared commitment to leveraging 
     logo: " ",
     caseStudy:
       "Switch Health connects patients and providers with streamlined appointment booking and medical record management.",
-    image: switch_health, 
+    image: switch_health,
     git: { icon: SiPrivateinternetaccess, url: "#" },
     liveDemo: "https://switchhealth.example.com",
     languages: [
-      { icon: FaReact, name: "React Native" }, 
+      { icon: FaReact, name: "React Native" },
       { icon: IoLogoJavascript, name: "JavaScript" },
       { icon: SiExpress, name: "Express.js" },
       { icon: SiMongodb, name: "MongoDB" },
-      { icon: FaNode, name: "Node.js" } 
+      { icon: FaNode, name: "Node.js" }
     ]
   },
   {
@@ -304,11 +312,11 @@ Working on Craddule gave me the opportunity to develop my skills further and be 
     logo: " ",
     caseStudy:
       "Craddule empowers innovators with tools and resources to turn ideas into reality.",
-    image: craddule, 
+    image: craddule,
     git: { icon: SiPrivateinternetaccess, url: "#" },
-    liveDemo: "#", 
+    liveDemo: "#",
     languages: [
-      { icon: FaReact, name: "React" }, 
+      { icon: FaReact, name: "React" },
       { icon: IoLogoJavascript, name: "JavaScript" },
       { icon: SiExpress, name: "Express.js" },
       { icon: SiMongodb, name: "MongoDB" },
@@ -362,5 +370,168 @@ The project is a testament to my ability to combine modern technologies like Typ
       { icon: SiMongodb, name: "MongoDB" },
       { icon: FaNode, name: "Node.js" }
     ]
-  }
+  },
+  {
+    index: 15,
+    title: "Toppins Quiz Creator",
+    about: `
+Toppins Quiz Creator is a platform I built to let users create their own quizzes easily — similar to Kahoot but without restrictive user limits. It supports customizable quiz formats, live multiplayer creation mode (in progress), and real-time updates for collaborative quiz building. The focus is on freedom and scalability for educators, trainers, and fun group games.`,
+    logo: " ",
+    caseStudy: "Build and host your own quizzes seamlessly.",
+    image: quizCreation,
+    git: { icon: SiPrivateinternetaccess, url: "#" },
+    liveDemo: "https://toppins-games-create.vercel.app/",
+    languages: [
+      { icon: FaReact, name: "React" },
+      { icon: IoLogoJavascript, name: "JavaScript" },
+      { icon: SiExpress, name: "Express.js" },
+      { icon: SiMongodb, name: "MongoDB" },
+      { icon: FaNode, name: "Node.js" }
+    ]
+  },
+  {
+    index: 16,
+    title: "Toppins Quiz Play",
+    about: `
+Toppins Quiz Play complements the Quiz Creator — a fun, interactive platform where users can join and play quizzes created by others. Designed for speed, responsiveness, and real-time interaction, it’s the play-side experience of the Toppins game ecosystem.`,
+    logo: " ",
+    caseStudy: "Interactive multiplayer quiz platform built for engagement.",
+    image: quiz,
+    git: { icon: SiPrivateinternetaccess, url: "#" },
+    liveDemo: "https://toppins-games.vercel.app/",
+    languages: [
+      { icon: FaReact, name: "React" },
+      { icon: IoLogoJavascript, name: "JavaScript" },
+      { icon: SiExpress, name: "Express.js" },
+      { icon: SiMongodb, name: "MongoDB" },
+      { icon: FaNode, name: "Node.js" }
+    ]
+  },
+  {
+    index: 17,
+    title: "BLSSD",
+    about: `
+BLSSD is a modern, visually captivating website created for a music company. It showcases artists, music collections, and events, with a clean UI and a fast, responsive layout. The project reflects my ability to build creative, entertainment-focused web experiences.`,
+    logo: " ",
+    caseStudy: "Modern web experience for a music label.",
+    image: blssd,
+    git: { icon: SiPrivateinternetaccess, url: "#" },
+    liveDemo: "https://blssd.vercel.app/",
+    languages: [
+      { icon: FaReact, name: "React" },
+      { icon: IoLogoJavascript, name: "JavaScript" },
+      { icon: SiExpress, name: "Express.js" },
+      { icon: SiMongodb, name: "MongoDB" },
+      { icon: FaNode, name: "Node.js" }
+    ]
+  },
+  {
+    index: 18,
+    title: "Malak Health",
+    about: `
+Malak is a health startup website built to promote accessibility and awareness in healthcare. The site features service descriptions, health resources, and startup information with a soothing and professional interface.`,
+    logo: " ",
+    caseStudy: "Building trust and innovation through health technology.",
+    image: malak,
+    git: { icon: SiPrivateinternetaccess, url: "#" },
+    liveDemo: "https://www.malak.name.ng/",
+    languages: [
+      { icon: FaReact, name: "React" },
+      { icon: IoLogoJavascript, name: "JavaScript" },
+      { icon: SiExpress, name: "Express.js" },
+      { icon: SiMongodb, name: "MongoDB" },
+      { icon: FaNode, name: "Node.js" }
+    ]
+  },
+  {
+    index: 19,
+    title: "ArchBridge Care Foundation",
+    about: `
+ArchBridge Care Foundation’s website highlights the work and outreach programs of the foundation. It includes donation sections, event updates, and volunteer registration — built to empower and inform visitors about the foundation’s impact.`,
+    logo: " ",
+    caseStudy: "Digital presence for a foundation making a difference.",
+    image: archbirdg,
+    git: { icon: SiPrivateinternetaccess, url: "#" },
+    liveDemo: "https://archbridgecarefoundation.com/",
+    languages: [
+      { icon: FaReact, name: "React" },
+      { icon: IoLogoJavascript, name: "JavaScript" },
+      { icon: SiExpress, name: "Express.js" },
+      { icon: SiMongodb, name: "MongoDB" },
+      { icon: FaNode, name: "Node.js" }
+    ]
+  },
+  {
+    index: 20,
+    title: "OasisPlus",
+    about: `
+OasisPlus is a media platform designed for watching and streaming content online. With a fluid, Netflix-style interface, it provides users with a premium viewing experience while offering content creators a platform to reach audiences.`,
+    logo: " ",
+    caseStudy: "Building an immersive online streaming experience.",
+    image: oasisplus,
+    git: { icon: SiPrivateinternetaccess, url: "#" },
+    liveDemo: "https://www.oasisplus.com.ng/",
+    languages: [
+      { icon: FaReact, name: "React" },
+      { icon: IoLogoJavascript, name: "JavaScript" },
+      { icon: SiExpress, name: "Express.js" },
+      { icon: SiMongodb, name: "MongoDB" },
+      { icon: FaNode, name: "Node.js" }
+    ]
+  },
+  {
+    index: 21,
+    title: "Aeroplane",
+    about: `
+Aeroplane is a flight booking platform that lets users search, book, and manage flight reservations seamlessly. The UI is designed for clarity and simplicity, with fast search integration and responsive layouts.`,
+    logo: " ",
+    caseStudy:
+      "Simplifying travel planning with Aeroplane’s flight booking system.",
+    image: aeroplane,
+    git: { icon: SiPrivateinternetaccess, url: "#" },
+    liveDemo: "https://aeroplane-website-pi.vercel.app/",
+    languages: [
+      { icon: FaReact, name: "React" },
+      { icon: IoLogoJavascript, name: "JavaScript" },
+      { icon: SiExpress, name: "Express.js" },
+      { icon: SiMongodb, name: "MongoDB" },
+      { icon: FaNode, name: "Node.js" }
+    ]
+  },
+  {
+    index: 22,
+    title: "Toppins Chat Genie",
+    about: `
+Toppins Chat Genie is my personal ChatGPT-like project — a conversational AI assistant that provides intelligent and context-aware responses. Built to showcase NLP integration and custom AI model handling, it merges conversational design with scalable backend support.`,
+    logo: " ",
+    caseStudy: "Creating intelligent digital interactions through AI chat.",
+    image: toppins_chat,
+    git: { icon: SiPrivateinternetaccess, url: "#" },
+    liveDemo: "https://topins-chat-genie.vercel.app/",
+    languages: [
+      { icon: FaReact, name: "React" },
+      { icon: IoLogoJavascript, name: "JavaScript" },
+      { icon: SiExpress, name: "Express.js" },
+      { icon: SiMongodb, name: "MongoDB" },
+      { icon: FaNode, name: "Node.js" }
+    ]
+  },
+//   {
+//     index: 23,
+//     title: "Teechaa",
+//     about: `
+// Teechaa is an educational platform designed to help students learn and prepare effectively for exams. It provides interactive lessons, quizzes, and progress tracking, offering a smart and modern approach to personalized education.`,
+//     logo: " ",
+//     caseStudy: "Empowering students with accessible and adaptive learning.",
+//     image: teechaa,
+//     git: { icon: SiPrivateinternetaccess, url: "#" },
+//     liveDemo: "https://teechaa.com/",
+//     languages: [
+//       { icon: FaReact, name: "React" },
+//       { icon: IoLogoJavascript, name: "JavaScript" },
+//       { icon: SiExpress, name: "Express.js" },
+//       { icon: SiMongodb, name: "MongoDB" },
+//       { icon: FaNode, name: "Node.js" }
+//     ]
+//   }
 ];

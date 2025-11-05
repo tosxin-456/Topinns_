@@ -36,9 +36,6 @@ const ProjectsList = ({ isLightMode }: ProjectsListProps) => {
       <Text className="text-3xl" textAlign="center" m="50px">
         Projects
       </Text>
-      <Text textAlign="center" fontSize="6xl" fontFamily="'Digital-7 Mono', monospace" color={isLightMode ? "blue.600" : "white"}>
-        Count: {count}
-      </Text>
       <Box display="flex" flexWrap="wrap" mt="15px" gap="5" margin="auto" boxShadow="lg" className="w-[95%] lg:w-[80%]">
         {projects
           .slice(0, visibleProjects)
