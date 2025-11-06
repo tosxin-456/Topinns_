@@ -1,7 +1,7 @@
 import { Box, Text, Button } from '@chakra-ui/react';
 import { projects } from '../utils/projects';
 import ProjectCard from './projectsCard';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 interface ProjectsListProps {
   isLightMode: boolean;
@@ -9,22 +9,6 @@ interface ProjectsListProps {
 
 const ProjectsList = ({ isLightMode }: ProjectsListProps) => {
   const [visibleProjects, setVisibleProjects] = useState(8);
- const [count, setCount] = useState(0);
-    useEffect(
-      () => {
-        let counter = 0;
-        const interval = setInterval(() => {
-          if (counter < projects.length) {
-            setCount(prev => prev + 1);
-            counter++;
-          } else {
-            clearInterval(interval);
-          }
-        }, 50); // Adjust speed of counting
-        return () => clearInterval(interval);
-      },
-      [projects.length]
-    );
 
   const handleSeeMore = () => {
     setVisibleProjects(projects.length);

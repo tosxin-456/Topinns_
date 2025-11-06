@@ -4,7 +4,6 @@ import {
   Feather,
   Calendar,
   User,
-  Tag,
   ChevronRight,
   Grid3X3,
   List,
