@@ -97,10 +97,7 @@ const ProjectCard = ({ project, isLightMode }: ProjectCardProps) => {
       display="flex"
       flexDirection={{ base: "column", lg: "row-reverse" }}
       animation={`${fadeInUp} 0.6s ease-out`}
-      _hover={{
-        boxShadow: "2xl",
-        transform: "translateY(-5px)"
-      }}
+      _hover={{ boxShadow: "2xl", transform: "translateY(-5px)" }}
       transition="all 0.3s ease"
     >
       {/* Image Container */}
@@ -151,9 +148,7 @@ const ProjectCard = ({ project, isLightMode }: ProjectCardProps) => {
           src={project.logo}
           alt={`${project.title} logo`}
           animation={`${float} 3s ease-in-out infinite`}
-          _hover={{
-            animation: `${pulse} 0.5s ease-in-out`
-          }}
+          _hover={{ animation: `${pulse} 0.5s ease-in-out` }}
         />
 
         <Heading
@@ -188,7 +183,11 @@ const ProjectCard = ({ project, isLightMode }: ProjectCardProps) => {
         >
           {/* Action Buttons */}
           <Box display="flex" alignItems="center" gap={3}>
-            <Link href={project.liveDemo} _hover={{ textDecoration: "none" }}>
+            <Link
+              href={project.liveDemo}
+              isExternal
+              _hover={{ textDecoration: "none" }}
+            >
               <Text
                 px={4}
                 py={2}
@@ -201,9 +200,7 @@ const ProjectCard = ({ project, isLightMode }: ProjectCardProps) => {
                   transform: "scale(1.1) translateY(-2px)",
                   boxShadow: "lg"
                 }}
-                _active={{
-                  transform: "scale(0.95)"
-                }}
+                _active={{ transform: "scale(0.95)" }}
               >
                 Live Demo
               </Text>
@@ -217,9 +214,7 @@ const ProjectCard = ({ project, isLightMode }: ProjectCardProps) => {
                 transform: "scale(1.15) rotate(5deg)",
                 color: "yellow.400"
               }}
-              _active={{
-                transform: "scale(0.9)"
-              }}
+              _active={{ transform: "scale(0.9)" }}
             >
               <IconContext.Provider value={{ size: "1.6em" }}>
                 <project.git.icon />
