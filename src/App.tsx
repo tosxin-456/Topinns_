@@ -10,6 +10,7 @@ import Projects from './pages/projects';
 import Games from './pages/games';
 import BlogPage from './pages/blog';
 import BlogPostPage from './pages/single blog';
+import ChessBlog from './components/chessblog';
 
 type SectionRefs = {
   home: HTMLElement | null;
@@ -118,6 +119,8 @@ const App: React.FC = () => {
 
         {/* Blog route */}
         <Route path="/blog" element={<BlogPage isLightMode={isLightMode} />} />
+        <Route path="/chess-blog" element={<ChessBlog 
+        />} />
         <Route path="/blog/:id" element={<BlogPostPage isLightMode={isLightMode} />} />
 
       </Routes>
