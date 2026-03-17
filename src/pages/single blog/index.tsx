@@ -2,8 +2,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import {
-  Heart,
-  MessageCircle,
   User,
   Calendar,
   Tag,
@@ -11,12 +9,12 @@ import {
 } from "lucide-react";
 import { blogPosts, type ChessSection } from "../../utils/blogs";
 
-interface Comment {
-  id: number;
-  author: string;
-  text: string;
-  date: string;
-}
+// interface Comment {
+//   id: number;
+//   author: string;
+//   text: string;
+//   date: string;
+// }
 
 interface BlogPostPageProps {
   isLightMode?: boolean;
@@ -459,29 +457,29 @@ const BlogPostPage: React.FC<BlogPostPageProps> = ({ isLightMode = true }) => {
   const { id } = useParams<{ id: string }>();
   const post = blogPosts.find((p) => p.id === Number(id));
 
-  const [likes, setLikes] = useState(42);
-  const [liked, setLiked] = useState(false);
-  const [comments, setComments] = useState<Comment[]>([
-    {
-      id: 1,
-      author: "Jane Doe",
-      text: "This really resonated with me. The insights about personal growth and self-reflection are particularly valuable.",
-      date: "Sep 25, 2025",
-    },
-    {
-      id: 2,
-      author: "Marcus Chen",
-      text: "Well written and very thoughtful! I appreciate the depth of analysis here.",
-      date: "Sep 24, 2025",
-    },
-    {
-      id: 3,
-      author: "Sarah Williams",
-      text: "Thanks for sharing this perspective. It's given me a lot to think about.",
-      date: "Sep 23, 2025",
-    },
-  ]);
-  const [newComment, setNewComment] = useState("");
+  // const [likes, setLikes] = useState(42);
+  // const [liked, setLiked] = useState(false);
+  // const [comments, setComments] = useState<Comment[]>([
+  //   {
+  //     id: 1,
+  //     author: "Jane Doe",
+  //     text: "This really resonated with me. The insights about personal growth and self-reflection are particularly valuable.",
+  //     date: "Sep 25, 2025",
+  //   },
+  //   {
+  //     id: 2,
+  //     author: "Marcus Chen",
+  //     text: "Well written and very thoughtful! I appreciate the depth of analysis here.",
+  //     date: "Sep 24, 2025",
+  //   },
+  //   {
+  //     id: 3,
+  //     author: "Sarah Williams",
+  //     text: "Thanks for sharing this perspective. It's given me a lot to think about.",
+  //     date: "Sep 23, 2025",
+  //   },
+  // ]);
+  // const [newComment, setNewComment] = useState("");
 
   if (!post) {
     return (
@@ -516,32 +514,32 @@ const BlogPostPage: React.FC<BlogPostPageProps> = ({ isLightMode = true }) => {
     );
   }
 
-  const toggleLike = () => {
-    setLiked((prev) => !prev);
-    setLikes((prev) => prev + (liked ? -1 : 1));
-  };
+  // const toggleLike = () => {
+  //   setLiked((prev) => !prev);
+  //   setLikes((prev) => prev + (liked ? -1 : 1));
+  // };
 
-  const addComment = () => {
-    if (!newComment.trim()) return;
-    const newEntry: Comment = {
-      id: comments.length + 1,
-      author: "Guest User",
-      text: newComment.trim(),
-      date: new Date().toLocaleDateString("en-US", {
-        month: "short",
-        day: "numeric",
-        year: "numeric",
-      }),
-    };
-    setComments((prev) => [newEntry, ...prev]);
-    setNewComment("");
-  };
+  // const addComment = () => {
+  //   if (!newComment.trim()) return;
+  //   const newEntry: Comment = {
+  //     id: comments.length + 1,
+  //     author: "Guest User",
+  //     text: newComment.trim(),
+  //     date: new Date().toLocaleDateString("en-US", {
+  //       month: "short",
+  //       day: "numeric",
+  //       year: "numeric",
+  //     }),
+  //   };
+  //   setComments((prev) => [newEntry, ...prev]);
+  //   setNewComment("");
+  // };
 
-  const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) {
-      addComment();
-    }
-  };
+  // const handleKeyPress = (e: React.KeyboardEvent) => {
+  //   if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) {
+  //     addComment();
+  //   }
+  // };
 
   const isChess = post.type === "chess";
 
